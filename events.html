@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
     <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/hikes.js" defer></script>
     <title>Events page</title>
   </head>
 
@@ -29,7 +30,7 @@
     </ul>
     <h1 class ="header">Events</h1>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" id="btn-show-modal">
         Launch demo modal
     </button>
     <section aria-label="Hike Trails">
@@ -89,8 +90,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h4>Directions imported from google directions API</h4>
-                    <p>
+                    <h4 id="hike-heading">Directions imported from google directions API</h4>
+                    <p id="hike-description">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
                         totam.
                     </p>
