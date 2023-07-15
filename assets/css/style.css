@@ -63,6 +63,9 @@ footer {
 
 
 /* Map - Trails Page */
+#card-text { 
+    background-color: blue ;
+}
 
 #map {
     height: 400px;
