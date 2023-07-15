@@ -23,3 +23,14 @@ ul.navbar li a {
 ul.navbar li a:hover {
     background-color: #ddd;
 }
+
+/* CSS for the footer */
+footer {
+    text-align: left;
+    padding: 10px;
+    margin-left: 5%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
