@@ -8,9 +8,8 @@ $('#btn-show-modal').click( () => {
 function updateHikeInformation() {
     // load the information about hike into JS object
     console.log('loading JSON ')
-    fetch("../../data/hikes.json").then( (response) => {
-        return response.json()
-    })
+    fetch("/data/hikes.json")
+    .then( (response) =>  response.json())
     .then( (data) => {
         // json loaded successfully. now populate the elements on the modal. find active card 
         // first find current Carousel index 
