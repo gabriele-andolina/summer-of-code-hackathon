@@ -37,11 +37,6 @@ footer {
 
 /* Carousel - Events Page */
 
-.carousel-block {
-    padding: 24px;
-    box-sizing: border-box;
-}
-
 .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -88,7 +83,7 @@ footer {
     background: none;
     border: none;
     font-size: 6rem;
-    top: 200%;
+    top: 750%;
     transform: translateY(-50%);
     z-index: 2;
     color: rgba(0, 0, 0, 0.5);
@@ -112,29 +107,43 @@ footer {
     right: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-    .carousel-block {
-        padding: 16px;
-    }
+.carousel-tabs {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1400%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.carousel-tab {
+    width: 40px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    margin: 0 5px;
+    opacity: 0.3;
+}
+
+.carousel-tab[data-active] {
+    opacity: 1;
+}
+
+.carousel-information {
+    position: absolute;
+    /* bottom: -280%; */
+}
+
+@media screen and (max-width: 768px) {
     .carousel-container {
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 372px) {
-    .carousel-block {
-        padding: 12px;
-    }
-
     .carousel-container {
         margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 324px) {
-    .carousel-block {
-        padding: 10px;
     }
 }
 
