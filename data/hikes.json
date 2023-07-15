@@ -16,7 +16,6 @@
     "lat": "53.850140",
     "long": "-5.766155",
     "description": "This is a description for Hike 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
-<<<<<<< HEAD
   },
   {
     "name": "Example Hike 4",
@@ -35,7 +34,5 @@
     "lat": "53.22222",
     "long": "-5.22222",
     "description": "This is a description for Hike 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
-=======
->>>>>>> 756b642e0be3b09e8d5324dd1ce1e987013696e3
   }
 ]
