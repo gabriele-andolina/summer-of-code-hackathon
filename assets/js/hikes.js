@@ -7,6 +7,7 @@ $('#btn-show-modal').click( () => {
 // trigger to populate modal information with current hike 
 function updateHikeInformation() {
     // load the information about hike into JS object
+    console.log('loading JSON ')
     fetch("../../data/hikes.json").then( (response) => {
         return response.json()
     })
