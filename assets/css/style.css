@@ -1,11 +1,19 @@
-/* Hero Image */
 body {
     margin: 0;
     font-family: sans-serif;
+}
+
+/* Hero Image on landing page */
+body.landing {
+    margin: 0;
     background: url('../images/Summer-Home-full.jpg') no-repeat center center fixed;
     background-size: cover;
 }
- 
+/* Hero Image */
+ #image {
+
+    
+ }
 /* CSS for the navbar */
 ul.navbar {
     list-style-type: none;
@@ -43,7 +51,7 @@ ul.navbar li a:hover {
 /* CSS for the footer */
 footer {
     text-align: left;
-    padding: 20px;
+    padding-left: 10px;
     position: fixed;
     left: 0;
     bottom: 0;
