@@ -11,14 +11,15 @@ function updateHikeInformation() {
         return response.json()
     })
     .then( (data) => {
-        // json loaded successfully. now populate the elements on the modal 
-        console.log(data)
-        console.log(data[0].name)
-        // update the heading . Currently just for the first Hike.
-        // This number should be chosen depending on the Carousel card that is currently selected. 
-        // Will have to fix this in the next commit.
-        $('#hike-heading').text(data[0].name)
-        $('#hike-description').text(data[0].description)
+        // json loaded successfully. now populate the elements on the modal. find active card 
+        // first find current Carousel index 
+        let activeCard = document.querySelector('[data-active]')
+        let carouselIndex = $(activeCard).index()
+
+        // update the heading and text 
+        // This number is chosen depending on the Carousel card that is currently selected. 
+        $('#hike-heading').text(data[carouselIndex].name)
+        $('#hike-description').text(data[carouselIndex].description)
     })
        
 }
