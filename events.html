@@ -32,12 +32,12 @@
     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
         Launch demo modal
     </button>
-    <section aria-label="Hike Trails">
+    <section class="carousel-block" aria-label="Hike Trails">
         <div class="carousel-container"> 
+            <header class="block__header">
+                <h2>Popular hike trails</h2>
+            </header>
             <div class="carousel" data-carousel>
-                <!-- Carousel buttons -->
-                <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="carousel-button next" data-carousel-button="next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></i></button>
                 <!-- Carousel pictures -->
                 <ul class="carousel-images" data-slides>
                     <li class="carousel-slide" data-active>
@@ -68,6 +68,13 @@
                     <li class="carousel-tab" data-carousel-tab data-index="4"></li>
                     <li class="carousel-tab" data-carousel-tab data-index="5"></li>
                 </ul>
+                <!-- Carousel controls -->
+                <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous carousel">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next" data-carousel-button="next" aria-label="Next carousel">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
