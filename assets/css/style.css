@@ -39,12 +39,76 @@ footer {
 
 .carousel-block {
     padding: 24px;
+    box-sizing: border-box;
 }
 
 .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 40px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-images {
+    padding: 0;
+    margin: 0;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.carousel-image {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 6rem;
+    top: 200%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 20%;
+    padding: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: rgba(0, 0, 0, 1);
+    outline: none;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
