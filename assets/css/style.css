@@ -130,15 +130,85 @@ footer {
     opacity: 1;
 }
 
+@media screen and (max-width: 1024px) {
+    .carousel-image {
+        height: 500px;
+    }
+
+    .carousel-button {
+        font-size: 5rem;
+        top: 625%;
+    }
+
+    .carousel-tabs {
+        top: 1150%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .carousel-container {
         margin-bottom: 30px;
+    }
+
+    .carousel-image {
+        height: 400px;
+    }
+
+    .carousel-button {
+        font-size: 4rem;
+        top: 500%;
+    }
+
+    .carousel-tabs {
+        top: 900%;
+    }
+
+    .carousel-tab {
+        width: 32px;
+        height: 12px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .carousel {
+        width: 85%;
+    }
+
+    .carousel-image {
+        height: 360px;
+    }
+
+    .carousel-button {
+        font-size: 3rem;
+        top: 420%;
+    }
+
+    .carousel-tabs {
+        top: 800%;
+    }
+
+    .carousel-tab {
+        width: 12px;
+        height: 12px;
     }
 }
 
 @media screen and (max-width: 372px) {
     .carousel-container {
         margin-bottom: 20px;
+    }
+
+    .carousel-image {
+        height: 320px;
+    }
+
+    .carousel-button {
+        font-size: 3rem;
+        top: 350%;
+    }
+
+    .carousel-tabs {
+        top: 700%;
     }
 }
 
