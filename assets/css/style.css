@@ -35,6 +35,29 @@ footer {
     width: 100%;
 }
 
+/* Carousel - Events Page */
+
+.carousel-block {
+    padding: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-block {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .carousel-block {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    .carousel-block {
+        padding: 10px;
+    }
+}
 
 /* Map - Trails Page */
 
