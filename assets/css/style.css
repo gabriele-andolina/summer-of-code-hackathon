@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: url('../images/pexels-pixabay-163703.jpg') no-repeat center center fixed;
+    background: url('../images/Summer-Home-full.jpg') no-repeat center center fixed;
     background-size: cover;
 }
  
@@ -30,20 +30,27 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-    background-color: #686868;
+    background-color: #a09e9e;
+}
+
+
+/* css for Header/title */
+
+.header {
+    text-align: center;
 }
 
 /* CSS for the footer */
 footer {
     text-align: left;
-    padding: 10px;
-    margin-left: 5%;
+    padding: 20px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     font-weight: bold;
     color: white;
+    background-color: #a09e9e;
 }
 
 
