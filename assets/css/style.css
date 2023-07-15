@@ -1,5 +1,5 @@
-  /* CSS for the navbar */
-  ul.navbar {
+/* CSS for the navbar */
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -36,6 +36,12 @@ footer {
 }
 
 
+/* Map - Trails Page */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
 
 /* body {
     margin: 0;
