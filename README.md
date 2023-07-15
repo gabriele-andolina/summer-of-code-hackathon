@@ -101,7 +101,7 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 (Add Code Snippet)
 ``` 
 
-## 3. Technologies Used
+# 3. Technologies Used
 [Go to the top](#table-of-contents)
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML)
