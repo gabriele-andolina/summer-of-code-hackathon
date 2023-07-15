@@ -18,15 +18,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
     <script src="assets/js/carousel.js" defer></script>
+<<<<<<< HEAD
+=======
+    <script src="assets/js/hikes.js" defer></script>
+>>>>>>> upstream/main
     <title>Events page</title>
   </head>
 
-  <body>
+  <body class="events">
     <ul class="navbar">
       <li><a href="#">Home</a></li>
       <li><a href="#">Events</a></li>
       <li><a href="#">Trails</a></li>
     </ul>
+<<<<<<< HEAD
     <h1>Hello!</h1>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
@@ -39,6 +44,18 @@
             </header>
             <div class="carousel" data-carousel>
                 <!-- Carousel pictures -->
+=======
+    <h1 class ="header">Events</h1>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" id="btn-show-modal">
+        Launch demo modal
+    </button>
+    <section aria-label="Hike Trails">
+        <div class="carousel-container"> 
+            <div class="carousel" data-carousel>
+                <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-button next" data-carousel-button="next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></i></button>
+>>>>>>> upstream/main
                 <ul class="carousel-images" data-slides>
                     <li class="carousel-slide" data-active>
                         <img src="assets/images/trail1.jpg" class="carousel-image" alt="A lake by the mountains">
@@ -59,8 +76,12 @@
                         <img src="assets/images/trail6.jpg" class="carousel-image" alt="A hilly forest hike trail">
                     </li>
                 </ul>
+<<<<<<< HEAD
                 <!-- Carousel tabs -->
                 <ul class="carousel-tabs" data-tabs>
+=======
+                <ul class="carousel-tabs">
+>>>>>>> upstream/main
                     <li class="carousel-tab" data-carousel-tab data-index="0" data-active></li>
                     <li class="carousel-tab" data-carousel-tab data-index="1"></li>
                     <li class="carousel-tab" data-carousel-tab data-index="2"></li>
@@ -68,6 +89,7 @@
                     <li class="carousel-tab" data-carousel-tab data-index="4"></li>
                     <li class="carousel-tab" data-carousel-tab data-index="5"></li>
                 </ul>
+<<<<<<< HEAD
                 <!-- Carousel controls -->
                 <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous carousel">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -75,12 +97,15 @@
                 <button class="carousel-button next" data-carousel-button="next" aria-label="Next carousel">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
+=======
+>>>>>>> upstream/main
             </div>
         </div>
     </section>
     <footer>
       <p>Site created by The Coders Cobana</p>
       <div class="footer-icons">
+<<<<<<< HEAD
         <a href="#"
           ><img src="./assets/images/facebook (1).svg" alt="Facebook"
         /></a>
@@ -94,6 +119,13 @@
         >
       </div>
     </footer>
+=======
+          <a href="#"><img src="assets/images/facebook (1).svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/images/square-twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="assets/images/instagram (1).svg" alt="Instagram"></a>
+      </div>
+  </footer>
+>>>>>>> upstream/main
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="directionsModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -107,8 +139,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
+<<<<<<< HEAD
                     <h4>Directions imported from google directions API</h4>
                     <p>
+=======
+                    <h4 id="hike-heading">Directions imported from google directions API</h4>
+                    <p id="hike-description">
+>>>>>>> upstream/main
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
                         totam.
                     </p>

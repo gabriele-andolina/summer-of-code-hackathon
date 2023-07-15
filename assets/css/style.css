@@ -10,6 +10,15 @@ body.landing {
         fixed;
     background-size: cover;
 }
+
+/* Hero Image on events page */
+body.events {
+    margin: 0;
+    background: url("../images/pexels-ricardo-santanna-16980748.jpg") no-repeat center center
+        fixed;
+    background-size: cover;
+}
+
 /* Hero Image */
 #image {
 }
@@ -40,6 +49,11 @@ ul.navbar li a:hover {
     background-color: #a09e9e;
 }
 
+/* css for navbar events page */
+.navbar-events {
+    background-color: #a09e9e !important;
+}
+
 /* css for Header/title */
 
 .header {
@@ -61,10 +75,6 @@ footer {
 
 /* Carousel - Events Page */
 
-.carousel-block {
-    padding: 24px;
-}
-
 .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -84,7 +94,6 @@ footer {
     box-shadow: 0 0 10px #acacac;
     position: relative;
     height: 600px;
-    /* overflow: hidden; */
 }
 
 .carousel ul {
@@ -164,6 +173,7 @@ footer {
     opacity: 1;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1200px) {
 
 }
@@ -199,6 +209,7 @@ footer {
 }
 
 @media screen and (max-width: 372px) {
+<<<<<<< HEAD
     .carousel-block {
         padding: 12px;
     }

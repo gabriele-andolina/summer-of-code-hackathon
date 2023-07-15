@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Example Hike 1",
+    "lat": "53.350140",
+    "long": "-6.266155",
+    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+  },
+  {
+    "name": "Example Hike 2",
+    "lat": "54.350140",
+    "long": "-7.266155",
+    "description": "This is a description for Hike 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+  },
+  {
+    "name": "Example Hike 3",
+    "lat": "53.850140",
+    "long": "-5.766155",
+    "description": "This is a description for Hike 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+  }
+]
