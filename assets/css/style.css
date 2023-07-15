@@ -52,8 +52,6 @@ footer {
 
 .carousel ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .carousel-images {
@@ -86,9 +84,9 @@ footer {
     top: 750%;
     transform: translateY(-50%);
     z-index: 2;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    border-radius: 20%;
+    border-radius: 50%;
     padding: 0 0.5rem;
     transition: color 0.3s;
 }
@@ -108,7 +106,10 @@ footer {
 }
 
 .carousel-tabs {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
     display: flex;
+    border-radius: 10px;
     justify-content: center;
     position: absolute;
     top: 1400%;
