@@ -10,6 +10,15 @@ body.landing {
         fixed;
     background-size: cover;
 }
+
+/* Hero Image on events page */
+body.events {
+    margin: 0;
+    background: url("../images/pexels-ricardo-santanna-16980748.jpg") no-repeat center center
+        fixed;
+    background-size: cover;
+}
+
 /* Hero Image */
 #image {
 }
@@ -38,6 +47,11 @@ ul.navbar li a {
 
 ul.navbar li a:hover {
     background-color: #a09e9e;
+}
+
+/* css for navbar events page */
+.navbar-events {
+    background-color: #a09e9e !important;
 }
 
 /* css for Header/title */
