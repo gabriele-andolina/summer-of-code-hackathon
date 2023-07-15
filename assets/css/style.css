@@ -1,5 +1,5 @@
-  /* CSS for the navbar */
-  ul.navbar {
+/* CSS for the navbar */
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,3 +34,67 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Map - Trails Page */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#hero-image {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../media/Summer-Home-Full.jpeg') no-repeat center center;
+}
+footer {
+    height: 150px;
+    }
+
+.footer-icons {
+    text-align:center;
+    }
+
+.footer-icons > li {
+        display: inline;
+    }
+
+    .footer-icons i {
+        font-size: 160%;
+        margin: 1%;
+        padding: 10%;
+        color:black;
+
+    } */
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: flex-start; /* Adjust alignment */
+    margin-bottom: 20px; /* Adjust margin bottom */
+}
+
+.footer-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-icons a svg {
+    width: 100%;
+    height: 100%;
+}
+
