@@ -186,11 +186,11 @@
       aria-labelledby="directionsModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered d-flex align-items-end">
         <div class="modal-content">
           <div class="modal-header text-center border-0">
             <h5 class="modal-title w-100" id="directionsModalLabel">
-              Directions
+              <span id="hike-heading">Title</span>
             </h5>
             <button
               type="button"
@@ -202,25 +202,26 @@
             </button>
           </div>
           <div class="modal-body">
-            <h4 id="hike-heading">
-              Directions imported from google directions API
+            <h5 id="hike-heading">
+              Description
             </h4>
             <p id="hike-description">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
               totam.
             </p>
             <div class="container col-12 w-100">
-              <div class="row">
-                <img
-                  src="./assets/images/pexels-pixabay-163703.jpg"
-                  alt=""
-                  width="100%"
-                />
-              </div>
+       
             </div>
             <div class="container col-12 pt-3">
               <span id="distance"></span>
               <div class="text-center">
+                <button
+                type="button"
+                class="btn btn-danger"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                id="btn-show-modal"
+              >Close</button>
                 <button class="btn btn-secondary">Open With Google Maps</button>
               </div>
             </div>
