@@ -16,7 +16,7 @@
       content="Dublin Coders, Walking meetups, Trail Exploration, 
         well-being promotion, community engagement, Outdoor activities, Dublin Trails, Group Walks"
     />
-    <meta name="author" content="The Coders Cobana" />
+    <meta name="author" content="The Coders Cabana" />
     <meta name="robots" content="index, follow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,6 +42,8 @@
       <li><a href="events.html">Events</a></li>
       <li><a href="trails.html">Trails</a></li>
     </ul>
+    <h1 class="header">Events</h1>
+    <!-- Button trigger modal -->
     <section aria-label="Hike Trails">
       <div class="carousel-container">
         <header class="block__header">
@@ -122,19 +124,60 @@
           >
             <i class="fa-solid fa-chevron-right"></i>
           </button>
+
+
+          <div id="hike-info" class="p-2">
+            <h5 id="hike-name" class="p-0 m-0">Hikeypikey</h5>
+            <div>
+              <span id="hike-date">34 Kep</span>
+            </div>
+            <div><span id="hike-time">Start: 13PM</span></div>
+            <div>
+              <span id="hike-km">Trail Length: -3km</span>
+            </div>
+            <div><span id="hike-duration">Est Time: 15yrs</span></div>
+            <div>
+              <span id="hike-intensity">Intensity: Breeze</span>
+            </div>
+            <div>
+              <span id="hike-distance">Finding your location... </span>
+            </div>
+          </div>
+
+      <div class="text-center">
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          id="btn-show-modal"
+        >
+          View More
+        </button>
+      </div>
+    </section>
+
+        </div>
+      </div>
+    <!-- Button trigger modal -->
+
+      <div class="text-center">
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          id="btn-show-modal"
+        >
+          View More
+        </button>
+      </div>
+    </section>
+
         </div>
       </div>
     </section>
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-info"
-      data-toggle="modal"
-      data-target="#exampleModal"
-      id="btn-show-modal"
-    >
-      Launch demo modal
-    </button>
+
     <footer>
       <p>Site created by The Coders Cobana</p>
       <div class="footer-icons">
@@ -158,11 +201,11 @@
       aria-labelledby="directionsModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered d-flex align-items-end">
         <div class="modal-content">
           <div class="modal-header text-center border-0">
             <h5 class="modal-title w-100" id="directionsModalLabel">
-              Directions
+              <span id="hike-heading">Title</span>
             </h5>
             <button
               type="button"
@@ -174,26 +217,27 @@
             </button>
           </div>
           <div class="modal-body">
-            <h4 id="hike-heading">
-              Directions imported from google directions API
+            <h5 id="hike-heading">
+              Description
             </h4>
             <p id="hike-description">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
               totam.
             </p>
             <div class="container col-12 w-100">
-              <div class="row">
-                <img
-                  src="./assets/images/pexels-pixabay-163703.jpg"
-                  alt=""
-                  width="100%"
-                />
-              </div>
+       
             </div>
             <div class="container col-12 pt-3">
               <span id="distance"></span>
-              <div class="text-center">
-                <button class="btn btn-secondary">Open With Google Maps</button>
+              <div class="text-center d-flex flex-column flex-sm-row justify-content-center">
+                <button
+                type="button"
+                class="btn btn-danger m-1"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                id="btn-show-modal"
+              >Close</button>
+                <a target=”_blank” class="btn btn-secondary m-1" id="google-maps">Open With Google Maps</a>
               </div>
             </div>
           </div>

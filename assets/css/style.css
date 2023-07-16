@@ -1,12 +1,11 @@
-
 /* --------------------------------------------------- General Styling */
 
 :root {
     --primary-bg-color: rgba(159, 133, 37, 0.45);
-    --secondary-bg-color:  rgba(159, 133, 37, 0.45);
+    --secondary-bg-color: rgba(159, 133, 37, 0.45);
 
     --clr-light: #e5e5e5;
-    
+
     --primary-font-familiy: 'Playfair', serif;
     --secondary-font-familiy: 'Open Sans', sans-serif;
 
@@ -22,7 +21,7 @@
     --fs-nav: var(--fs-500);
 }
 
-@media  ( min-width: 50em ) {
+@media (min-width: 50em) {
     :root {
         --fs-700: 3.5rem;
         --fs-500: 2.5rem;
@@ -32,14 +31,14 @@
         --fs-button: var(--fs-300);
     }
 }
-    
+
 body {
     margin: 0;
     font-family: sans-serif;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
     box-sizing: border-box;
 }
@@ -58,28 +57,26 @@ body {
 body.landing {
     margin: 0;
     background: linear-gradient(to bottom, var(--primary-bg-color), var(--primary-bg-color)),
-     url("../images/Summer-Home-full.jpg")   no-repeat center center
-        fixed;
+        url("../images/Summer-Home-full.jpg") no-repeat center center fixed;
     background-size: cover;
-} 
+}
 
 /* Hero Image on events page */
 body.events {
     margin: 0;
-    background: linear-gradient(to bottom,  var(--primary-bg-color), var(--secondary-bg-color)),
-    url("../images/Summer-Home-full.jpg")  no-repeat center center
-        fixed;
+    background: linear-gradient(to bottom, var(--primary-bg-color), var(--secondary-bg-color)),
+        url("../images/Summer-Home-full.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
 /* Hero Image on Trails page */
 body.trails {
     margin: 0;
-    background: linear-gradient(to bottom,  var(--primary-bg-color), var(--secondary-bg-color)),
-    url("../images/Summer-Home-full.jpg")   no-repeat center center
-        fixed;
+    background: linear-gradient(to bottom, var(--primary-bg-color), var(--secondary-bg-color)),
+        url("../images/Summer-Home-full.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+
 /* CSS for the navbar */
 ul.navbar {
     list-style-type: none;
@@ -91,7 +88,8 @@ ul.navbar {
 }
 
 ul.navbar li {
-    margin: 0 10px; /* Add margin to create space between links */
+    margin: 0 10px;
+    /* Add margin to create space between links */
 }
 
 ul.navbar li a {
@@ -138,6 +136,7 @@ footer {
 
 /* Carousel - Events Page */
 
+
 .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -150,6 +149,14 @@ footer {
     margin: 20px 0;
     text-align: center;
     color: var(--clr-light)
+}
+
+#hike-info {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px 0px 5px 0px;
 }
 
 .carousel {
@@ -245,6 +252,11 @@ footer {
     .carousel-slide>img {
         border-radius: 0;
     }
+
+    #hike-info {
+        border-radius: 0px 0px 5px 0px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -330,11 +342,11 @@ footer {
     margin: 2rem 5rem;
 }
 
-@media (max-width: 468px ) {
+@media (max-width: 468px) {
     .trailsintro p {
         margin: 0.5rem 2.5rem;
     }
-    
+
 }
 
 /* Map - Trails Page */
@@ -386,8 +398,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    align-items: flex-start; /* Adjust alignment */
-    margin-bottom: 20px; /* Adjust margin bottom */
+    align-items: flex-start;
+    /* Adjust alignment */
+    margin-bottom: 20px;
+    /* Adjust margin bottom */
 }
 
 .footer-icons a {
@@ -403,7 +417,7 @@ footer {
     height: 100%;
 }
 
-footer{
+footer {
     font-family: var(--primary-font-familiy);
     font-size: var(--fs-500);
     margin: 0 auto;
@@ -417,9 +431,11 @@ footer p {
 .modal.fade.in {
     opacity: 1;
 }
+
 .modal.in .modal-dialog {
     transform: translate(0, 0);
 }
+
 .modal-backdrop.in {
     opacity: 0.5;
     /* opacity: $modal-backdrop-opacity; (SCSS) */
