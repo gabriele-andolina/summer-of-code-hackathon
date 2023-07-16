@@ -73,10 +73,12 @@ const hikeJson = [
       "Looking a bit like a scene from Lord of the Rings, the Ballinastoe Forest short trail offers a boardwalk and the view from the JB Malone Memorial.",
   },
 ];
+
 let userPositionAvailable = false;
 let hikeData;
 let distances = [];
 // trigger to populate hike info information with current hike on load
+
 $(".carousel-button").click(() => {
   updateHikeInformation();
 });
