@@ -1,27 +1,82 @@
+/* --------------------------------------------------- General Styling */
+
+:root {
+    --primary-bg-color: rgba(159, 133, 37, 0.45);
+    --secondary-bg-color:  rgba(159, 133, 37, 0.45);
+
+    --clr-light: #e5e5e5;
+    
+    --primary-font-familiy: 'Playfair', serif;
+    --secondary-font-familiy: 'Open Sans', sans-serif;
+
+    --fw-regular: 700;
+    --fw-medium: 500;
+    --fw-regular: 300;
+
+    --fs-300: 1rem;
+    --fs-500: 1.5rem;
+    --fs-700: 2.5rem;
+
+    --fs-body: var(--fs-300);
+    --fs-nav: var(--fs-500);
+}
+
+@media  ( min-width: 50em ) {
+    :root {
+        --fs-700: 3.5rem;
+        --fs-500: 2.5rem;
+
+        --fs-body: var(--fs-300);
+        --fs-nav: var(--fs-500);
+        --fs-button: var(--fs-300);
+    }
+}
+    
 body {
     margin: 0;
     font-family: sans-serif;
 }
 
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* ---------------------------------------------------  Landing Page */
+
+
 /* Hero Image on landing page */
 body.landing {
     margin: 0;
-    background: url("../images/Summer-Home-full.jpg") no-repeat center center
-        fixed;
+    background: linear-gradient(to bottom, var(--primary-bg-color), var(--primary-bg-color)),
+        url("../images/Summer-Home-full.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
 /* Hero Image on events page */
 body.events {
     margin: 0;
-    background: url("../images/pexels-ricardo-santanna-16980748.jpg") no-repeat center center
-        fixed;
+    background: linear-gradient(to bottom, var(--primary-bg-color), var(--secondary-bg-color)),
+        url("../images/Summer-Home-full.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
-/* Hero Image */
-#image {
+/* Hero Image on Trails page */
+body.trails {
+    margin: 0;
+    background: linear-gradient(to bottom, var(--primary-bg-color), var(--secondary-bg-color)),
+        url("../images/Summer-Home-full.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
+
 /* CSS for the navbar */
 ul.navbar {
     list-style-type: none;
@@ -33,7 +88,8 @@ ul.navbar {
 }
 
 ul.navbar li {
-    margin: 0 10px; /* Add margin to create space between links */
+    margin: 0 10px;
+    /* Add margin to create space between links */
 }
 
 ul.navbar li a {
@@ -42,7 +98,9 @@ ul.navbar li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: var(--fw-regular);
+    font-family: var(--secondary-font-familiy);
+    font-size: var(--fs-500)
 }
 
 ul.navbar li a:hover {
@@ -58,6 +116,9 @@ ul.navbar li a:hover {
 
 .header {
     text-align: center;
+    font-weight: var(--fw-medium);
+    font-family: var(--primary-font-familiy);
+    font-size: var(--fs-700)
 }
 
 /* CSS for the footer */
@@ -93,7 +154,7 @@ footer {
     border-radius: 20px;
     box-shadow: 0 0 10px black;
     position: relative;
-    height: 600px;
+    height: 70vh;
 }
 
 .carousel ul {
@@ -173,6 +234,33 @@ footer {
     opacity: 1;
 }
 
+.carousel-information {
+    position: relative;
+    color: white;
+    background: none;
+    font-size: 32px;
+}
+
+.carousel-text {
+    position: absolute;
+    opacity: 0;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.carousel-text[data-active] {
+    opacity: 1;
+}
+
+.carousel-text p {
+    margin: 0;
+}
+
 @media screen and (max-width: 1200px) {
     .carousel-slide>img {
         border-radius: 0;
@@ -184,16 +272,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .carousel {
-        height: 500px;
-    }
-
     .carousel-container {
         margin-bottom: 30px;
     }
 
     .block__header {
         margin: 15px 0;
+    }
+
+    .carousel-information {
+        font-size: 24px;
     }
 
     .carousel-button {
@@ -207,10 +295,6 @@ footer {
 }
 
 @media screen and (max-width: 572px) {
-    .carousel {
-        height: 400px;
-    }
-
     .carousel-button.previous {
         left: 0.7rem;
     }
@@ -229,13 +313,17 @@ footer {
         width: 12px;
         height: 12px;
     }
+
+    .carousel-information {
+        font-size: 16px;
+    }
+
+    .carousel-text {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 372px) {
-    .carousel {
-        height: 320px;
-    }
-
     .carousel-container {
         margin-bottom: 20px;
     }
@@ -251,6 +339,27 @@ footer {
     .carousel-button.next {
         right: 0.4rem;
     }
+}
+
+/* Trails page */
+
+.trailsintro {
+    font-family: var(--secondary-font-familiy);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-medium);
+    line-height: 1.5;
+    color: var(--clr-light)
+}
+
+.trailsintro p {
+    margin: 2rem 5rem;
+}
+
+@media (max-width: 468px ) {
+    .trailsintro p {
+        margin: 0.5rem 2.5rem;
+    }
+    
 }
 
 /* Map - Trails Page */
@@ -302,8 +411,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    align-items: flex-start; /* Adjust alignment */
-    margin-bottom: 20px; /* Adjust margin bottom */
+    align-items: flex-start;
+    /* Adjust alignment */
+    margin-bottom: 20px;
+    /* Adjust margin bottom */
 }
 
 .footer-icons a {
@@ -319,12 +430,25 @@ footer {
     height: 100%;
 }
 
+footer{
+    font-family: var(--primary-font-familiy);
+    font-size: var(--fs-500);
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .modal.fade.in {
     opacity: 1;
 }
+
 .modal.in .modal-dialog {
     transform: translate(0, 0);
 }
+
 .modal-backdrop.in {
     opacity: 0.5;
     /* opacity: $modal-backdrop-opacity; (SCSS) */

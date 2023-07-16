@@ -1,38 +1,70 @@
 [
   {
-    "name": "Example Hike 1",
-    "lat": "53.350140",
-    "long": "-6.266155",
-    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "name": "Ticknock",
+    "lat": "53.255716553795814", 
+    "long": "-6.2510793852498505",
+    "date": "22/07/2023",
+    "time": "2pm",
+    "km": 10,
+    "duration": "2 hours",
+    "intensity": "Moderate",
+    "description": "A great network of walking trails through forests and mountains with incredible views of the greater Dublin area from the top of Three Rock Mountain."
   },
   {
-    "name": "Example Hike 2",
-    "lat": "54.350140",
-    "long": "-7.266155",
-    "description": "This is a description for Hike 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "name": "Tibradden",
+    "lat": "53.242979844676746", 
+    "long": "-6.294514045563979",
+    "date": "29/07/2023",
+    "time": "2pm",
+    "km": 2.5,
+    "duration": "1.5 hours",
+    "intensity": "Easy",
+    "description": "A stroll through an absurdly green forest followed by a hike up the mountain to the cairn at the summit."
   },
   {
-    "name": "Example Hike 3",
-    "lat": "53.850140",
-    "long": "-5.766155",
-    "description": "This is a description for Hike 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "name": "Howth Cliff",
+    "lat": "53.38961204534314", 
+    "long": "-6.071991282868927",
+    "date": "05/08/2023",
+    "time": "2pm",
+    "km": 12,
+    "duration": "3 hours",
+    "intensity": "Moderate",
+    "description": "One of the tougher walks in Howth, which takes in everything from Howth Hill and Red Rock Beach to Bailey Lighthouse and more."
   },
   {
-    "name": "Example Hike 4",
-    "lat": "53.850140",
-    "long": "-3.766155",
-    "description": "This is a description for Hike 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+
+    "name": "Djouce",
+    "lat": "53.15585306091994",
+    "long": "-6.188564839539633", 
+    "date": "12/08/2023",
+    "time": "2pm",
+    "km": 8,
+    "duration": "2 hours",
+    "intensity": "Easy",
+    "description": "A great pick if you’re in the mood for stretching your legs and want to get treated to some deadly views of Great Sugarloaf, Maulin, and the Powerscourt Waterfall."
   },
   {
-    "name": "Example Hike 5",
-    "lat": "50.850140",
-    "long": "-5.766155",
-    "description": "This is a description for Hike 5  - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "name": "Sugarloaf",
+    "lat": "53.144508111702116",
+    "long": "-6.154635143215563", 
+    "date": "19/08/2023",
+    "time": "2pm",
+    "km": 10,
+    "duration": "2 hours",
+    "intensity": "Moderate",
+    "description": "The longer of two walks around and up the Great Sugarloaf Mountain. On clear days, it’s possible to see all the way 150km across the Irish Sea!"
   },
   {
-    "name": "Example Hike 6",
-    "lat": "53.22222",
-    "long": "-5.22222",
-    "description": "This is a description for Hike 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "name": "Ballinastoe Forest",
+    "lat": "53.1026255627096", 
+    "long": "-6.254810200706456",
+    "date": "26/08/2023",
+    "time": "2pm",
+    "km": 5,
+    "duration": "1.5 hours",
+    "intensity": "Easy",
+    "description": "Looking a bit like a scene from Lord of the Rings, the Ballinastoe Forest short trail offers a boardwalk and the view from the JB Malone Memorial."
+
   }
 ]
