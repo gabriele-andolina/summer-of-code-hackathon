@@ -136,7 +136,6 @@ footer {
 
 /* Carousel - Events Page */
 
-
 .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -148,15 +147,6 @@ footer {
 .block__header {
     margin: 20px 0;
     text-align: center;
-    color: var(--clr-light)
-}
-
-#hike-info {
-    position: absolute;
-    color: #fff;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px 0px 5px 0px;
 }
 
 .carousel {
@@ -164,7 +154,7 @@ footer {
     border-radius: 20px;
     box-shadow: 0 0 10px black;
     position: relative;
-    height: 600px;
+    height: 70vh;
 }
 
 .carousel ul {
@@ -244,6 +234,33 @@ footer {
     opacity: 1;
 }
 
+.carousel-information {
+    position: relative;
+    color: white;
+    background: none;
+    font-size: 32px;
+}
+
+.carousel-text {
+    position: absolute;
+    opacity: 0;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.carousel-text[data-active] {
+    opacity: 1;
+}
+
+.carousel-text p {
+    margin: 0;
+}
+
 @media screen and (max-width: 1200px) {
     .carousel-slide>img {
         border-radius: 0;
@@ -252,24 +269,19 @@ footer {
     .carousel-slide>img {
         border-radius: 0;
     }
-
-    #hike-info {
-        border-radius: 0px 0px 5px 0px;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
-    .carousel {
-        height: 500px;
-    }
-
     .carousel-container {
         margin-bottom: 30px;
     }
 
     .block__header {
         margin: 15px 0;
+    }
+
+    .carousel-information {
+        font-size: 24px;
     }
 
     .carousel-button {
@@ -283,10 +295,6 @@ footer {
 }
 
 @media screen and (max-width: 572px) {
-    .carousel {
-        height: 400px;
-    }
-
     .carousel-button.previous {
         left: 0.7rem;
     }
@@ -305,13 +313,17 @@ footer {
         width: 12px;
         height: 12px;
     }
+
+    .carousel-information {
+        font-size: 16px;
+    }
+
+    .carousel-text {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 372px) {
-    .carousel {
-        height: 320px;
-    }
-
     .carousel-container {
         margin-bottom: 20px;
     }

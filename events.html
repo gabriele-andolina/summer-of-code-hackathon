@@ -43,122 +43,133 @@
       <li><a href="trails.html">Trails</a></li>
     </ul>
     <h1 class="header">Events</h1>
-    <!-- Button trigger modal -->
+
+    <!-- Carousel starts here -->
     <section aria-label="Hike Trails">
       <div class="carousel-container">
-        <header class="block__header">
-          <h2>Hiking Meet Ups</h2>
-        </header>
-        <div class="carousel" data-carousel>
-          <!-- Carousel pictures -->
-          <ul class="carousel-images" data-slides>
-            <li class="carousel-slide" data-active>
-              <img
-                src="assets/images/trail1.jpg"
-                class="carousel-image"
-                alt="A lake by the mountains"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail2.jpg"
-                class="carousel-image"
-                alt="A hike trail leading through mountainous grassland"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail3.jpg"
-                class="carousel-image"
-                alt="A forest densely populated with tall trees"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail4.jpg"
-                class="carousel-image"
-                alt="A hike trail through a meadow"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail5.jpg"
-                class="carousel-image"
-                alt="A hike trail up a mountain"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail6.jpg"
-                class="carousel-image"
-                alt="A hilly forest hike trail"
-              />
-            </li>
-          </ul>
-          <!-- Carousel tabs -->
-          <ul class="carousel-tabs" data-tabs>
-            <li
-              class="carousel-tab"
-              data-carousel-tab
-              data-index="0"
-              data-active
-            ></li>
-            <li class="carousel-tab" data-carousel-tab data-index="1"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="2"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="3"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="4"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="5"></li>
-          </ul>
-          <!-- Carousel controls -->
-          <button
-            class="carousel-button previous"
-            data-carousel-button="previous"
-            aria-label="Previous carousel"
-          >
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button
-            class="carousel-button next"
-            data-carousel-button="next"
-            aria-label="Next carousel"
-          >
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-
-
-          <div id="hike-info" class="p-2">
-            <h5 id="hike-name" class="p-0 m-0">Hikeypikey</h5>
-            <div>
-              <span id="hike-date">34 Kep</span>
-            </div>
-            <div><span id="hike-time">Start: 13PM</span></div>
-            <div>
-              <span id="hike-km">Trail Length: -3km</span>
-            </div>
-            <div><span id="hike-duration">Est Time: 15yrs</span></div>
-            <div>
-              <span id="hike-intensity">Intensity: Breeze</span>
-            </div>
-            <div>
-              <span id="hike-distance">Finding your location... </span>
-            </div>
+          <header class="block__header">
+              <h2>Hiking meetups</h2>
+          </header>
+          <div class="carousel" data-carousel>
+              <!-- Carousel pictures -->
+              <ul class="carousel-images" data-slides>
+                  <li class="carousel-slide" data-active>
+                      <img src="assets/images/trail1.webp" srcset="" class="carousel-image" alt="A lake by the mountains">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail2.webp" class="carousel-image" alt="A hike trail leading through mountainous grassland">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail3.webp" class="carousel-image" alt="A forest densely populated with tall trees">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail4.webp" class="carousel-image" alt="A hike trail through a meadow">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail5.webp" class="carousel-image" alt="A hike trail up a mountain">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail6.webp" class="carousel-image" alt="A hilly forest hike trail">
+                  </li>
+              </ul>
+              <!-- Carousel tabs -->
+              <ul class="carousel-tabs" data-tabs>
+                  <li class="carousel-tab" data-carousel-tab data-index="0" data-active></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="1"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="2"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="3"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="4"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="5"></li>
+              </ul>
+              <!-- Carousel controls -->
+              <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous carousel">
+                  <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel-button next" data-carousel-button="next" aria-label="Next carousel">
+                  <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <!-- Carousel text -->
+              <ul class="carousel-information" data-information>
+                  <li class="carousel-text" data-carousel-text data-index="0" data-active>
+                      <p>Trail: #1</p>
+                      <p>Trail length: #1</p>
+                      <p>Meet Location: #1</p>
+                      <p>Date: #1</p>
+                      <p>Time: #1</p>
+                  </li>
+                  <li class="carousel-text" data-carousel-text data-index="1">
+                      <p>Trail: #2</p>
+                      <p>Trail length: #2</p>
+                      <p>Meet Location: #2</p>
+                      <p>Date: #2</p>
+                      <p>Time: #2</p>
+                  </li>
+                  <li class="carousel-text" data-carousel-text data-index="2">
+                      <p>Trail: #3</p>
+                      <p>Trail length: #3</p>
+                      <p>Meet Location: #3</p>
+                      <p>Date: #3</p>
+                      <p>Time: #3</p>
+                  </li>
+                  <li class="carousel-text" data-carousel-text data-index="3">
+                      <p>Trail: #4</p>
+                      <p>Trail length: #4</p>
+                      <p>Meet Location: #4</p>
+                      <p>Date: #4</p>
+                      <p>Time: #4</p>
+                  </li>
+                  <li class="carousel-text" data-carousel-text data-index="4">
+                      <p>Trail: #5</p>
+                      <p>Trail length: #5</p>
+                      <p>Meet Location: #5</p>
+                      <p>Date: #5</p>
+                      <p>Time: #5</p>
+                  </li>
+                  <li class="carousel-text" data-carousel-text data-index="5">
+                      <p>Trail: #6</p>
+                      <p>Trail length: #6</p>
+                      <p>Meet Location: #6</p>
+                      <p>Date: #6</p>
+                      <p>Time: #6</p>
+                  </li>
+              </ul>
           </div>
-
-      <div class="text-center">
-        <button
-          type="button"
-          class="btn btn-info"
-          data-toggle="modal"
-          data-target="#exampleModal"
-          id="btn-show-modal"
-        >
-          View More
-        </button>
       </div>
-    </section>
+  </section>
 
-        </div>
+
+    <!-- Fran's code -->
+
+    <!-- <div id="hike-info" class="p-2">
+      <h5 id="hike-name" class="p-0 m-0">Hikeypikey</h5>
+      <div>
+        <span id="hike-date">34 Kep</span>
       </div>
+      <div><span id="hike-time">Start: 13PM</span></div>
+      <div>
+        <span id="hike-km">Trail Length: -3km</span>
+      </div>
+      <div><span id="hike-duration">Est Time: 15yrs</span></div>
+      <div>
+        <span id="hike-intensity">Intensity: Breeze</span>
+      </div>
+      <div>
+        <span id="hike-distance">Finding your location... </span>
+      </div>
+    </div>
+
+<div class="text-center">
+  <button
+    type="button"
+    class="btn btn-info"
+    data-toggle="modal"
+    data-target="#exampleModal"
+    id="btn-show-modal"
+  >
+    View More
+  </button>
+</div> -->
+
     <!-- Button trigger modal -->
 
       <div class="text-center">

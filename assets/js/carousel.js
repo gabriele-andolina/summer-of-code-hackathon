@@ -5,6 +5,7 @@ carouselButtons.forEach(button => {
         const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
         const slides = button.closest('[data-carousel]').querySelector('[data-slides]');
         const tabs = button.closest('[data-carousel]').querySelector('[data-tabs]');
+        const text = button.closest('[data-carousel]').querySelector('[data-information]');
 
         // Link button to slide
 
@@ -25,6 +26,17 @@ carouselButtons.forEach(button => {
 
         tabs.children[newTab].dataset.active = true;
         delete activeTab.dataset.active;
+
+        // Link button to text
+
+        const activeText = text.querySelector('[data-active');
+        let newText = [...text.children].indexOf(activeText) + offset;
+        if (newText < 0) newText = text.children.length - 1;
+        if (newText >= text.children.length) newText = 0;
+
+        text.children[newText].dataset.active = true;
+        delete activeText.dataset.active;
     });
 });
+
 
