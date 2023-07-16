@@ -183,11 +183,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    
-}
-
 @media screen and (max-width: 768px) {
+    .carousel {
+        height: 500px;
+    }
+
     .carousel-container {
         margin-bottom: 30px;
     }
@@ -206,6 +206,20 @@ footer {
     }
 }
 
+@media screen and (max-width: 572px) {
+    .carousel {
+        height: 400px;
+    }
+
+    .carousel-button.previous {
+        left: 0.7rem;
+    }
+
+    .carousel-button.next {
+        right: 0.7rem;
+    }
+}
+
 @media screen and (max-width: 428px) {
     .carousel-button {
         font-size: 4rem;
@@ -218,8 +232,24 @@ footer {
 }
 
 @media screen and (max-width: 372px) {
+    .carousel {
+        height: 320px;
+    }
+
     .carousel-container {
         margin-bottom: 20px;
+    }
+
+    .carousel-button {
+        font-size: 3rem;
+    }
+
+    .carousel-button.previous {
+        left: 0.4rem;
+    }
+
+    .carousel-button.next {
+        right: 0.4rem;
     }
 }
 
