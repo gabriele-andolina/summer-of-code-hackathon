@@ -125,13 +125,19 @@ ul.navbar li a:hover {
 footer {
     text-align: left;
     padding-left: 10px;
-    position: fixed;
+    padding-bottom: 10px;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
-    font-weight: bold;
-    color: white;
-    background-color: #a09e9e;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-300);
+    color: rgba(228, 227, 227, 0.8);
+}
+
+/* to make footer elements be placed on bottom of screen instead of using fixed positioning */
+.module-inside {
+    min-height: 90vh;
 }
 
 /* Carousel - Events Page */
@@ -364,8 +370,9 @@ footer {
 /* Map - Trails Page */
 
 #map {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 .marker {
@@ -409,24 +416,27 @@ footer {
 .footer-icons {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
     gap: 10px;
-    align-items: flex-start;
     /* Adjust alignment */
     margin-bottom: 20px;
     /* Adjust margin bottom */
 }
 
+.fa  {
+    color: var(--clr-light);
+  }
+
 .footer-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
 }
 
-.footer-icons a svg {
-    width: 100%;
-    height: 100%;
+.footer-icons img {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 footer {
