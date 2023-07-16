@@ -104,7 +104,7 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 [Go to the top](#table-of-contents)
 
 ### Colours
-- - https://mycolor.space/
+- https://mycolor.space/
 
 ### Typography
 - https://fonts.google.com/specimen/Oswald?query=oswald+
@@ -115,7 +115,7 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 
 ### All Pages
 #### Navbar
-The Navbar offers up three links to help the user navigate through the site.
+The navbar offers up three links to help the user navigate through the site.
 
 <img width="960" alt="navbar links (2)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/1083106e-5b23-4d99-b733-79838f7da1f2">
 
