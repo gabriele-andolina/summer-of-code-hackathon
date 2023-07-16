@@ -93,7 +93,7 @@ footer {
     border-radius: 20px;
     box-shadow: 0 0 10px black;
     position: relative;
-    height: 80vh;
+    height: 70vh;
 }
 
 .carousel ul {
@@ -201,6 +201,14 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+    .carousel {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        position: relative;
+        height: 80vh;
+    }
+
     .carousel-slide>img {
         border-radius: 0;
     }
