@@ -8,7 +8,7 @@
     "km": 10,
     "duration": "2 hours",
     "intensity": "Moderate",
-    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "description": "A great network of walking trails through forests and mountains with incredible views of the greater Dublin area from the top of Three Rock Mountain."
   },
   {
     "name": "Tibradden",
@@ -19,7 +19,7 @@
     "km": 2.5,
     "duration": "1.5 hours",
     "intensity": "Easy",
-    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "description": "A stroll through an absurdly green forest followed by a hike up the mountain to the cairn at the summit."
   },
   {
     "name": "Howth Cliff",
@@ -30,7 +30,7 @@
     "km": 12,
     "duration": "3 hours",
     "intensity": "Moderate",
-    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "description": "One of the tougher walks in Howth, which takes in everything from Howth Hill and Red Rock Beach to Bailey Lighthouse and more."
   },
   {
 
@@ -42,7 +42,7 @@
     "km": 8,
     "duration": "2 hours",
     "intensity": "Easy",
-    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "description": "A great pick if you’re in the mood for stretching your legs and want to get treated to some deadly views of Great Sugarloaf, Maulin, and the Powerscourt Waterfall."
   },
   {
     "name": "Sugarloaf",
@@ -53,7 +53,7 @@
     "km": 10,
     "duration": "2 hours",
     "intensity": "Moderate",
-    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "description": "The longer of two walks around and up the Great Sugarloaf Mountain. On clear days, it’s possible to see all the way 150km across the Irish Sea!"
   },
   {
     "name": "Ballinastoe Forest",
@@ -64,7 +64,7 @@
     "km": 5,
     "duration": "1.5 hours",
     "intensity": "Easy",
-    "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+    "description": "Looking a bit like a scene from Lord of the Rings, the Ballinastoe Forest short trail offers a boardwalk and the view from the JB Malone Memorial."
 
   }
 ]

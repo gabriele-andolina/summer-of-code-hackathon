@@ -1,4 +1,4 @@
-// Loads the Maps JavaScript Library dy dynamic import.
+// LOADS THE MAP JS LIBRARY BY DYNAMIC IMPORT
 ((g) => {
     var h,
         a,
@@ -17,7 +17,7 @@
             h ||
             (h = new Promise(async (f, n) => {
                 await (a = m.createElement("script"));
-                e.set("libraries", [...r] + "places");
+                e.set("libraries", [...r] + "");
                 for (k in g)
                     e.set(
                         k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
@@ -40,12 +40,12 @@
     // Add other bootstrap parameters as needed, using camel case.
 });
 
-// Adds customised hiking icon
+// ADDS CUSTOMISED HIKING ICON
 const hikingIcon = document.createElement("img");
 hikingIcon.src = "assets/images/hiking-icon.png";
 hikingIcon.classList.add("marker");
 
-// Initialize and add the map
+// INITIALISES AND SHOWS THE MAP
 let map;
 
 async function initMap() {

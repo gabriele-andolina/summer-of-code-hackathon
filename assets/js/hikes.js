@@ -19,6 +19,9 @@ function updateHikeInformation() {
       let activeCard = document.querySelector("[data-active]");
       let carouselIndex = $(activeCard).index();
 
+      // for now, description is being hard coded and not fetched from a backend server.
+      updateDescription( data, carouselIndex )
+
       // update the heading and text
       // This number is chosen depending on the Carousel card that is currently selected.
       $("#hike-heading").text(data[carouselIndex].name);
@@ -28,6 +31,24 @@ function updateHikeInformation() {
       // Run function to recalulate distance from hike location
       handlePositionUpdate();
     });
+}
+
+// updates the description of the hike based on the selected carousel index. 
+//note that this is hard coded so we can use github pages for deployment. 
+function updateDescription( data, carouselIndex) {
+
+  descriptions = 
+    {
+      0: "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
+      1: "This is a description for Hike 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
+      2: "This is a description for Hike 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
+      3: "This is a description for Hike 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
+      4: "This is a description for Hike 5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
+      5: "This is a description for Hike 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
+    }
+  
+    // update the object description 
+  data[carouselIndex].description = descriptions[carouselIndex]
 }
 
 function calculateDistance(latUser, lonUser, latDest, lonDest) {
