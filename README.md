@@ -56,6 +56,10 @@ The main focus for the Trail Pals website was to make it intuitive and easy to n
 -   As a coder in Dublin, I want a user-friendly interface that allows me to filter and search for trails based on location, difficulty level, or specific features, so I can easily discover the perfect trail for my preferences.
 -   As a coder in Dublin, I want to access information about each trail, including distance, terrain and notable landmarks, so I can make informed decisions and choose the trails that align with my interests and fitness level.
 -   As a coder in Dublin, I want to see upcoming events an walk schedules on the page, so I can plan my time and participate in group meetups that suit my availability.
+
+<img width="960" alt="2023-07-16 (9)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/86e3ff14-3389-4160-8229-955978ed279a">
+
+
 ### User Expectations:
 -   The website should be easy to navigate.
 -   The menu is clear.
@@ -76,7 +80,7 @@ We used the GitHub projects board to manage our project. This ensured that we we
 
 The website has a responsive design to ensure a pleasant user experience whilst using different devices. The design is simple and user friendly.
 
-- The header, footer and navigation are consistent through all pages.
+- The header, footer and navigation are consistent on all pages.
 - The footer is at the bottom of the each page and contains links to social media websites.
 
 ## 1.3. Skeleton
@@ -85,14 +89,25 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 
 ### Wire-frames
 
+<img width="960" alt="1st-Wireframe(Ed)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/5d3cc318-6103-48fa-8b59-873a8a6b81f0">
+
+<img width="956" alt="2nd-Wireframe(Gab)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/6b4e4747-5448-4332-924c-5329dc874a8a">
+
+<img width="956" alt="3rd-Wireframe(Joe)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/270932c6-ebc3-4610-9968-a8c975badd7b">
+
+
+
+
 
 ## 1.4. Design
 
 [Go to the top](#table-of-contents)
 
 ### Colours
+- - https://mycolor.space/
 
 ### Typography
+- https://fonts.google.com/specimen/Oswald?query=oswald+
 
 # 2. Features
 
@@ -101,16 +116,27 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 ### All Pages
 #### Navbar
 The Navbar offers up three links to help the user navigate through the site.
+
+<img width="960" alt="navbar links (2)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/1083106e-5b23-4d99-b733-79838f7da1f2">
+
 #### Footer
+The footer contains social media icons and credits the site owners.
+
+<img width="960" alt="footer" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/e8e46ad7-510a-4cd3-9d74-b796ce80cd96">
+
 ### Home
-- Links
-- Button
+- Links.
+- Social media icons.
+<img width="220" alt="Home-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/0be461f1-d8c5-46f5-a2c8-c94735504461">
+
 
 ### Events
 #### Carousel
-The carousel is a slideshow for cycling through a series of content, built with CSS and some JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
+- The carousel is a slideshow for cycling through a series of content, built with CSS and some JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
 
-<img width="956" alt="Carousel (2)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/c23feb5b-3170-46d1-974f-5a4b8b0666c3">
+<img width="222" alt="Events-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/ca101715-0e38-4d8c-983c-98c8e65252d5">
+
+
 
 ```
 <section aria-label="Hike Trails">
@@ -205,16 +231,11 @@ The carousel is a slideshow for cycling through a series of content, built with 
         </div>
     </section>
 ``` 
-- Modal
-A modal window creates a mode that disables user interaction with the main window but keeps it visible, with the modal window as a child window in front of it. 
-```
-(Add Code Snippet)
-``` 
-
 ### Trails
-- Maps
+- Google Maps
 
-<img width="956" alt="Map" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/4bec1104-52ac-448e-903d-45992c65b697">
+<img width="222" alt="Trails-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/2c4ecf46-29d8-470c-a3f8-b5c53c311e06">
+
 
 
 ```
@@ -248,7 +269,7 @@ function initMap() {
 -   [Balsamiq](https://balsamiq.com/)
     -   Balsamiq was used to create the wireframes during the design process.
 -   [Google Fonts](https://fonts.google.com/)
-    -   Google fonts were used to import the **"Add Fonts"** font into the style.css file which is used on all pages throughout the project.
+    -   Google fonts were used to import the **"Oswald"** font into the style.css file which is used on all pages throughout the project.
 -   [GitHub](https://github.com/)
     -   GitHub was used to store the project's code after being pushed from Git.
 # 4. Testing
@@ -307,6 +328,7 @@ To improve the search engine optimisation (SEO) of the website:
 
 
 # 8. End Product
+<img width="220" alt="Home-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/0be461f1-d8c5-46f5-a2c8-c94735504461">   <img width="222" alt="Events-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/ca101715-0e38-4d8c-983c-98c8e65252d5">   <img width="222" alt="Trails-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/2c4ecf46-29d8-470c-a3f8-b5c53c311e06">
 
 # 9. Known Bugs
 
@@ -315,12 +337,13 @@ To improve the search engine optimisation (SEO) of the website:
 
 ### Code
 
-- The carousel on the Events page came from []()
+- https://learn.codeinstitute.net/
+- https://www.youtube.com/
 
 ### Content
 
-- 
-- 
+- https://mycolor.space/
+- https://fonts.google.com/
 
 
 ### Project Acknowledgements
