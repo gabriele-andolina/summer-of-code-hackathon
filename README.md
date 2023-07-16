@@ -6,18 +6,20 @@
 
 Welcome to the Trail Pals website. Trail Pals organises hiking events based in Dublin.
 
-A live website can be found [here]().
 
-<img>
+<img width="956" alt="Responsive-Home (2)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/941b04c1-fb62-4fc9-8532-d2a7af09142d">
+
+A live website can be found [here](https://gabriele-andolina.github.io/summer-of-code-hackathon/index.html).
+
 
 
 # Table of Contents
 
 -   [1. UX](#ux)
     -   [1.1. Strategy](#strategy)
-            -   [Project Goals:](#project-goals)
-            -   [User Goals:](#user-goals)
-            -   [User Expectations:](#user-expectations)
+    -   [Project Goals](#project-goals)
+    -   [User Goals](#user-goals)
+    -   [User Expectations](#user-expectations)
     -   [1.2. Structure](#structure)
     -   [1.3. Skeleton](#skeleton)
     -   [1.4. Design](#design)
@@ -26,14 +28,18 @@ A live website can be found [here]().
 -   [4. Testing](#testing)
 -   [5. Deployment](#deployment)
 -   [6. Social Media](#social-media)
--   [7. End Product](#end-product)
--   [8. Known Bugs](#known-bugs)
--   [9. Credits](#credits)
+-   [7. SEO](#seo)
+-   [8. End Product](#end-product)
+-   [9. Known Bugs](#known-bugs)
+-   [10. Credits](#credits)
 
 
 
 # 1. UX
 [Go to the top](#table-of-contents)
+
+The main focus for the Trail Pals website was to make it intuitive and easy to navigate. It is targeted at people in the Dublin vicinity. Whether you are an experienced or novice hiker, Trail Pals has a trail for you.
+
 
 
 ## 1.1. Strategy
@@ -41,12 +47,23 @@ A live website can be found [here]().
 [Go to the top](#table-of-contents)
 
 ### Project Goals:
-
+-   Responsive design to make the website accessible on different screen sizes.
+-   The website design and colours are easy on the eye.
+-   The website is catering to accessiblity with it's font, color contrast and descriptions.
 ### User Goals:
-
+-   As a coder in Dublin, I want to find group meetups to walk together with other coding enthusiasts, so I can promote my well-being and build connections within the community.
+-   As a coder in Dublin, I want to explore a map displaying all the trails available in the city, so I can easily find nearby routes and plan my walks conveniently.
+-   As a coder in Dublin, I want a user-friendly interface that allows me to filter and search for trails based on location, difficulty level, or specific features, so I can easily discover the perfect trail for my preferences.
+-   As a coder in Dublin, I want to access information about each trail, including distance, terrain and notable landmarks, so I can make informed decisions and choose the trails that align with my interests and fitness level.
+-   As a coder in Dublin, I want to see upcoming events an walk schedules on the page, so I can plan my time and participate in group meetups that suit my availability.
 ### User Expectations:
+-   The website should be easy to navigate.
+-   The menu is clear.
+-   The website is responsive on all devices.
+-   The pictures are high quality.
+-   The website responds quickly to user requests.
 
-### User Stories:
+### User Stories
 
 We used the GitHub projects board to manage our project. This ensured that we were on track as we moved issues from to do, to in progress and finally to done.
 
@@ -237,6 +254,7 @@ function initMap() {
 # 4. Testing
 
 ### Responsive Tools
+We used [Am I Responsive](http://ami.responsivedesign.is) to validate reponsiveness on different devices.
 
 ### W3C Validator Tools
 
@@ -248,19 +266,67 @@ function initMap() {
 
 ### Manual Testing
 
+We have tested the site on different browsers and devices.
+
+-   iPhone X.
+-   iPhone XS Max.
+-   iPad Pro.
+-   MacBook Pro.
+-   Safari.
+-   Google Chrome.
+
+
 # 5. Deployment
 
+1. Go to project repositories and select relevant project.
+2. Click on the settings option.
+3. Scroll down to the Github pages section.
+4. Navigate to source section.
+5. Click on the dropdown menu select branch and select main.
+6. Click save.
+7. Once page has refreshed scroll down to get deployed link.
+8. Can click on the link to see for validation.
+
 # 6. Social Media Page
+<img width="960" alt="2023-07-16 (6)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/294f9c7c-fe37-43c6-aa13-14dd4c2726fa">
 
-# 7. End Product
+# 7. SEO
+To improve the search engine optimisation (SEO) of the website:
 
-# 8. Known Bugs
+- We added keywords in a meta tags to each html file. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
 
-# 9. Credits
+- The list of keywords are as follows:
+    - Dublin Coders.
+    - Walking meetups.
+    - Trail Exploration.
+    - well-being promotion.
+    - community engagement.
+    - Outdoor activities.
+    - Dublin Trails.
+    - Group Walks.
+
+
+# 8. End Product
+
+# 9. Known Bugs
+
+# 10. Credits
+[Go to the top](#table-of-contents)
 
 ### Code
 
+- The carousel on the Events page came from []()
+
 ### Content
 
+- 
+- 
+
+
 ### Project Acknowledgements
+
+- Thanks to all the contributing members of the Coders Cobana Team.
+- Thanks to the Code Institute Hackathon Team for their support.
+
+
 
