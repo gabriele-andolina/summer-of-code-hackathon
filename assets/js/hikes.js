@@ -4,7 +4,7 @@ const hikeJson = [
     name: "Ticknock",
     lat: "53.255716553795814",
     long: "-6.2510793852498505",
-    date: "22/07/2023",
+    date: "Jul 22, 2023",
     time: "2pm",
     km: 10,
     duration: "2 hours",
@@ -16,7 +16,7 @@ const hikeJson = [
     name: "Tibradden",
     lat: "53.242979844676746",
     long: "-6.294514045563979",
-    date: "29/07/2023",
+    date: "Jul 29, 2023",
     time: "2pm",
     km: 2.5,
     duration: "1.5 hours",
@@ -28,7 +28,7 @@ const hikeJson = [
     name: "Howth Cliff",
     lat: "53.38961204534314",
     long: "-6.071991282868927",
-    date: "05/08/2023",
+    date: "Aug 05, 2023",
     time: "2pm",
     km: 12,
     duration: "3 hours",
@@ -40,7 +40,7 @@ const hikeJson = [
     name: "Djouce",
     lat: "53.15585306091994",
     long: "-6.188564839539633",
-    date: "12/08/2023",
+    date: "Aug 12, 2023",
     time: "2pm",
     km: 8,
     duration: "2 hours",
@@ -52,7 +52,7 @@ const hikeJson = [
     name: "Sugarloaf",
     lat: "53.144508111702116",
     long: "-6.154635143215563",
-    date: "19/08/2023",
+    date: "Aug 19, 2023",
     time: "2pm",
     km: 10,
     duration: "2 hours",
@@ -64,7 +64,7 @@ const hikeJson = [
     name: "Ballinastoe Forest",
     lat: "53.1026255627096",
     long: "-6.254810200706456",
-    date: "26/08/2023",
+    date: "Aug 26, 2023",
     time: "2pm",
     km: 5,
     duration: "1.5 hours",
@@ -75,9 +75,8 @@ const hikeJson = [
 ];
 
 let hikeData;
-
 // trigger to populate modal information with current hike
-$("#btn-show-modal").click(() => {
+$(".carousel-button").click(() => {
   updateHikeInformation();
 });
 
@@ -95,6 +94,12 @@ function updateHikeInformation() {
   // This number is chosen depending on the Carousel card that is currently selected.
   $("#hike-heading").text(hikeJson[carouselIndex].name);
   $("#hike-description").text(hikeJson[carouselIndex].description);
+  $("#hike-name").text(hikeJson[carouselIndex].name);
+  $("#hike-date").text(hikeJson[carouselIndex].date);
+  $("#hike-time").text(`Start: ${hikeJson[carouselIndex].time.toUpperCase()}`);
+  $("#hike-intensity").text(`Intensity: ${hikeJson[carouselIndex].intensity}`);
+  $("#hike-km").text(`Distance: ${hikeJson[carouselIndex].km} km `);
+  $("#hike-duration").text(`Est Time: ${hikeJson[carouselIndex].duration}`);
   // Save data of current slide in global variable
   hikeData = hikeJson[carouselIndex];
   // Run function to recalulate distance from hike location
@@ -166,6 +171,7 @@ function handlePositionError(error) {
   console.error("Error occurred:", error.message);
 }
 // tracking position start
+updateHikeInformation();
 navigator.geolocation.watchPosition(handlePositionUpdate, handlePositionError, {
   enableHighAccuracy: true,
 });
