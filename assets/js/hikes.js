@@ -107,6 +107,12 @@ function updateHikeInformation() {
     $("#hike-distance").text("Loading distance...");
   }
 
+  // add google maps link to modal, using long/lat of the current item
+  $("#google-maps").attr(
+    "href",
+    `https://www.google.com/maps/dir/?api=1&destination=${hikeJson[carouselIndex].lat},${hikeJson[carouselIndex].long}`
+  );
+
   // Save data of current slide in global variable, including index
   hikeData = {
     ...hikeJson[carouselIndex],
