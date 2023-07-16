@@ -73,37 +73,45 @@ const hikeJson = [
       "Looking a bit like a scene from Lord of the Rings, the Ballinastoe Forest short trail offers a boardwalk and the view from the JB Malone Memorial.",
   },
 ];
-
+let userPositionAvailable = false;
 let hikeData;
-// trigger to populate modal information with current hike
+let distances = [];
+// trigger to populate hike info information with current hike on load
 $(".carousel-button").click(() => {
   updateHikeInformation();
 });
 
-// trigger to populate modal information with current hike
 function updateHikeInformation() {
-  // clears old distance calculation
-  $("#distance").text(``);
-
-  // json loaded successfully. now populate the elements on the modal. find active card
-  // first find current Carousel index
+  // find the index of the carousel item that is active
   let activeCard = document.querySelector("[data-active]");
   let carouselIndex = $(activeCard).index();
 
   // update the heading and text
-  // This number is chosen depending on the Carousel card that is currently selected.
+
+  // On modal items
   $("#hike-heading").text(hikeJson[carouselIndex].name);
   $("#hike-description").text(hikeJson[carouselIndex].description);
+
+  // On picture items
   $("#hike-name").text(hikeJson[carouselIndex].name);
   $("#hike-date").text(hikeJson[carouselIndex].date);
   $("#hike-time").text(`Start: ${hikeJson[carouselIndex].time.toUpperCase()}`);
   $("#hike-intensity").text(`Intensity: ${hikeJson[carouselIndex].intensity}`);
-  $("#hike-km").text(`Distance: ${hikeJson[carouselIndex].km} km `);
+  $("#hike-km").text(`Trail Length: ${hikeJson[carouselIndex].km} km `);
   $("#hike-duration").text(`Est Time: ${hikeJson[carouselIndex].duration}`);
-  // Save data of current slide in global variable
-  hikeData = hikeJson[carouselIndex];
-  // Run function to recalulate distance from hike location
-  handlePositionUpdate();
+
+  //check if userPosition is available, if not display placeholder
+  if (userPositionAvailable) {
+    $("#hike-distance").text(`${hikeJson[carouselIndex].distance} km away`);
+  } else {
+    $("#hike-distance").text("Loading distance...");
+  }
+
+  // Save data of current slide in global variable, including index
+  hikeData = {
+    ...hikeJson[carouselIndex],
+  };
+  hikeData.index = carouselIndex;
 }
 
 function calculateDistance(latUser, lonUser, latDest, lonDest) {
@@ -129,49 +137,39 @@ function toRadians(degrees) {
   return degrees * (Math.PI / 180);
 }
 
-// function to update the distance display on the webpage
-function updateDistance(userPosition, targetPosition) {
-  const distance = calculateDistance(
-    userPosition.coords.latitude,
-    userPosition.coords.longitude,
-    targetPosition.latitude,
-    targetPosition.longitude
-  );
+// function to calculate distance form user to all of the
+// hiking trails.
+function calculateAllDistances(userPosition) {
+  distances = hikeJson.map((hike) => {
+    const targetPosition = {
+      latitude: parseFloat(hike.lat),
+      longitude: parseFloat(hike.long),
+    };
+    const distance = calculateDistance(
+      userPosition.coords.latitude,
+      userPosition.coords.longitude,
+      targetPosition.latitude,
+      targetPosition.longitude
+    );
 
-  // Display the distance on the webpage
-  $("#distance").text(`${distance.toFixed(0)} km away`);
+    // Update the 'distance' property in hikeJson with the calculated distance
+    hike.distance = distance.toFixed(0);
+  });
+  //userposition data available, update info again
+  userPositionAvailable = true;
+  updateHikeInformation();
 }
 
-// Function to handle the geolocation position update
-function handlePositionUpdate() {
-  if (!hikeData) {
-    console.log("Hike data is not loaded yet.");
-    return;
-  }
-
-  navigator.geolocation.watchPosition(
-    // function to update location when hikeData is updated
-    (position) => {
-      const targetPosition = {
-        latitude: parseFloat(hikeData.lat),
-        longitude: parseFloat(hikeData.long),
-      };
-
-      // Update the distance display
-      updateDistance(position, targetPosition);
-    },
-    handlePositionError,
-    {
-      enableHighAccuracy: true,
-    }
-  );
-}
-
+// error handler for geolocation
 function handlePositionError(error) {
   console.error("Error occurred:", error.message);
 }
+
 // tracking position start
-updateHikeInformation();
-navigator.geolocation.watchPosition(handlePositionUpdate, handlePositionError, {
-  enableHighAccuracy: true,
-});
+navigator.geolocation.watchPosition(
+  calculateAllDistances,
+  handlePositionError,
+  {
+    enableHighAccuracy: true,
+  }
+);
