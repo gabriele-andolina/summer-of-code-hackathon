@@ -16,5 +16,23 @@
     "lat": "53.850140",
     "long": "-5.766155",
     "description": "This is a description for Hike 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+  },
+  {
+    "name": "Example Hike 4",
+    "lat": "53.850140",
+    "long": "-3.766155",
+    "description": "This is a description for Hike 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+  },
+  {
+    "name": "Example Hike 5",
+    "lat": "50.850140",
+    "long": "-5.766155",
+    "description": "This is a description for Hike 5  - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+  },
+  {
+    "name": "Example Hike 6",
+    "lat": "53.22222",
+    "long": "-5.22222",
+    "description": "This is a description for Hike 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
   }
 ]
