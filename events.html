@@ -34,10 +34,12 @@
         Launch demo modal
     </button>
     <section aria-label="Hike Trails">
-        <div class="carousel-container"> 
+        <div class="carousel-container">
+            <header class="block__header">
+                <h2>Popular hike trails</h2>
+            </header>
             <div class="carousel" data-carousel>
-                <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="carousel-button next" data-carousel-button="next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></i></button>
+                <!-- Carousel pictures -->
                 <ul class="carousel-images" data-slides>
                     <li class="carousel-slide" data-active>
                         <img src="assets/images/trail1.jpg" class="carousel-image" alt="A lake by the mountains">
@@ -58,7 +60,8 @@
                         <img src="assets/images/trail6.jpg" class="carousel-image" alt="A hilly forest hike trail">
                     </li>
                 </ul>
-                <ul class="carousel-tabs">
+                <!-- Carousel tabs -->
+                <ul class="carousel-tabs" data-tabs>
                     <li class="carousel-tab" data-carousel-tab data-index="0" data-active></li>
                     <li class="carousel-tab" data-carousel-tab data-index="1"></li>
                     <li class="carousel-tab" data-carousel-tab data-index="2"></li>
@@ -66,6 +69,13 @@
                     <li class="carousel-tab" data-carousel-tab data-index="4"></li>
                     <li class="carousel-tab" data-carousel-tab data-index="5"></li>
                 </ul>
+                <!-- Carousel controls -->
+                <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous carousel">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next" data-carousel-button="next" aria-label="Next carousel">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -77,6 +87,7 @@
           <a href="#"><img src="assets/images/instagram (1).svg" alt="Instagram"></a>
       </div>
   </footer>
+>>>>>>> upstream/main
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="directionsModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -101,6 +112,7 @@
                         </div>
                     </div>
                     <div class="container col-12 pt-3">
+                        <span id="distance"></span>
                         <div class="text-center">
                             <button class="btn btn-secondary">Open With Google Maps</button>
                         </div>
