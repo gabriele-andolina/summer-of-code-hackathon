@@ -82,16 +82,15 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 [Go to the top](#table-of-contents)
 
 ### All Pages
-- Navbar
-The Navbar offers up three links to help the user navigate through the site
-- footer.
+#### Navbar
+The Navbar offers up three links to help the user navigate through the site.
+#### Footer
 ### Home
 - Links
 - Button
 
 ### Events
-
-- Carousel
+#### Carousel
 The carousel is a slideshow for cycling through a series of content, built with CSS and some JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
 
 <img width="956" alt="Carousel (2)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/c23feb5b-3170-46d1-974f-5a4b8b0666c3">
