@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap');
 body {
     margin: 0;
     font-family: sans-serif;
@@ -48,6 +49,10 @@ ul.navbar li a:hover {
     text-align: center;
 }
 
+#card-body {
+    color: white;
+}
+
 /* CSS for the footer */
 footer {
     text-align: left;
@@ -63,8 +68,14 @@ footer {
 
 
 /* Map - Trails Page */
-#card-text { 
-    background-color: blue ;
+.card-title { 
+    font-family: oswald, sans-serif;
+    color: white;
+}
+
+.card-text {
+    font-family: oswald, sans-serif;
+    color: white;
 }
 
 #map {
