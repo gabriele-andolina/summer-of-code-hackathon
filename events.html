@@ -42,6 +42,8 @@
       <li><a href="events.html">Events</a></li>
       <li><a href="trails.html">Trails</a></li>
     </ul>
+    <h1 class="header">Events</h1>
+    <!-- Button trigger modal -->
     <section aria-label="Hike Trails">
       <div class="carousel-container">
         <header class="block__header">
@@ -122,6 +124,37 @@
           >
             <i class="fa-solid fa-chevron-right"></i>
           </button>
+
+          <div id="hike-info" class="pt-2 px-2">
+            <h5 id="hike-name" class="p-0 m-0">Hikeypikey</h5>
+            <div>
+              <span id="hike-date">jul</span>
+            </div>
+            <div><span id="hike-time">15</span></div>
+            <div>
+              <span id="hike-km">5km</span>
+            </div>
+            <div><span id="hike-duration">15hrs</span></div>
+            <div>
+              <span id="hike-intensity">Well rough</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          id="btn-show-modal"
+        >
+          View More
+        </button>
+      </div>
+    </section>
+
         </div>
       </div>
     </section>
@@ -135,6 +168,7 @@
     >
       Launch demo modal
     </button>
+
     <footer>
       <p>Site created by The Coders Cobana</p>
       <div class="footer-icons">
