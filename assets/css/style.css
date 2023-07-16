@@ -150,11 +150,6 @@ footer {
     padding-bottom: 60px;
 }
 
-.block__header {
-    margin: 20px 0;
-    text-align: center;
-}
-
 .carousel {
     width: 100%;
     border-radius: 20px;
@@ -266,6 +261,10 @@ footer {
 .carousel-text p {
     margin: 0;
 }
+.carousel-title {
+    font-weight: bold;
+    font-size: 110%;
+}
 
 @media screen and (max-width: 1200px) {
     .carousel-slide>img {
@@ -280,10 +279,6 @@ footer {
 @media screen and (max-width: 768px) {
     .carousel-container {
         margin-bottom: 30px;
-    }
-
-    .block__header {
-        margin: 15px 0;
     }
 
     .carousel-information {
