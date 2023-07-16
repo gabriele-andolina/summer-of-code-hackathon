@@ -4,6 +4,8 @@
 :root {
     --primary-bg-color: rgba(159, 133, 37, 0.45);
     --secondary-bg-color:  rgba(159, 133, 37, 0.45);
+
+    --clr-light: #e5e5e5;
     
     --primary-font-familiy: 'Playfair', serif;
     --secondary-font-familiy: 'Open Sans', sans-serif;
@@ -316,12 +318,22 @@ footer {
 
 /* Trails page */
 .trailsintro {
-    margin: 2%;
-    background-color: bisque;
+    font-family: var(--secondary-font-familiy);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-medium);
+    line-height: 1.5;
+    color: var(--clr-light)
 }
 
 .trailsintro p {
-    margin-left: 10px;
+    margin: 2rem 5rem;
+}
+
+@media (max-width: 468px ) {
+    .trailsintro p {
+        margin: 0.5rem 2.5rem;
+    }
+    
 }
 
 /* Map - Trails Page */
@@ -398,7 +410,7 @@ footer{
 
 footer p {
     margin: 0 auto;
-    text-align: ;
+    text-align: center;
 }
 
 .modal.fade.in {
