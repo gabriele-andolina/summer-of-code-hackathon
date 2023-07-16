@@ -19,8 +19,12 @@ body.events {
     background-size: cover;
 }
 
-/* Hero Image */
-#image {
+/* Hero Image on Trails page */
+body.trails {
+    margin: 0;
+    background: url("../images/vertical-shot-woman-walking-through-forest.jpg") no-repeat center center
+        fixed;
+    background-size: cover;
 }
 /* CSS for the navbar */
 ul.navbar {
@@ -251,6 +255,16 @@ footer {
     .carousel-button.next {
         right: 0.4rem;
     }
+}
+
+/* Trails page */
+.trailsintro {
+    margin: 2%;
+    background-color: bisque;
+}
+
+.trailsintro p {
+    margin-left: 10px;
 }
 
 /* Map - Trails Page */
