@@ -38,4 +38,3 @@ carouselButtons.forEach(button => {
         delete activeText.dataset.active;
     });
 });
-
