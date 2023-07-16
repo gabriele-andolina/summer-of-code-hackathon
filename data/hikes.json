@@ -33,6 +33,7 @@
     "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
   },
   {
+
     "name": "Djouce",
     "lat": "53.15585306091994",
     "long": "-6.188564839539633", 
@@ -64,5 +65,6 @@
     "duration": "1.5 hours",
     "intensity": "Easy",
     "description": "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?"
+
   }
 ]
