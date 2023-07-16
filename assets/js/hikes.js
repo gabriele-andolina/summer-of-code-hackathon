@@ -1,3 +1,79 @@
+//Json data array to allow deployment on github pages
+const hikeJson = [
+  {
+    name: "Ticknock",
+    lat: "53.255716553795814",
+    long: "-6.2510793852498505",
+    date: "22/07/2023",
+    time: "2pm",
+    km: 10,
+    duration: "2 hours",
+    intensity: "Moderate",
+    description:
+      "A great network of walking trails through forests and mountains with incredible views of the greater Dublin area from the top of Three Rock Mountain.",
+  },
+  {
+    name: "Tibradden",
+    lat: "53.242979844676746",
+    long: "-6.294514045563979",
+    date: "29/07/2023",
+    time: "2pm",
+    km: 2.5,
+    duration: "1.5 hours",
+    intensity: "Easy",
+    description:
+      "A stroll through an absurdly green forest followed by a hike up the mountain to the cairn at the summit.",
+  },
+  {
+    name: "Howth Cliff",
+    lat: "53.38961204534314",
+    long: "-6.071991282868927",
+    date: "05/08/2023",
+    time: "2pm",
+    km: 12,
+    duration: "3 hours",
+    intensity: "Moderate",
+    description:
+      "One of the tougher walks in Howth, which takes in everything from Howth Hill and Red Rock Beach to Bailey Lighthouse and more.",
+  },
+  {
+    name: "Djouce",
+    lat: "53.15585306091994",
+    long: "-6.188564839539633",
+    date: "12/08/2023",
+    time: "2pm",
+    km: 8,
+    duration: "2 hours",
+    intensity: "Easy",
+    description:
+      "A great pick if you’re in the mood for stretching your legs and want to get treated to some deadly views of Great Sugarloaf, Maulin, and the Powerscourt Waterfall.",
+  },
+  {
+    name: "Sugarloaf",
+    lat: "53.144508111702116",
+    long: "-6.154635143215563",
+    date: "19/08/2023",
+    time: "2pm",
+    km: 10,
+    duration: "2 hours",
+    intensity: "Moderate",
+    description:
+      "The longer of two walks around and up the Great Sugarloaf Mountain. On clear days, it’s possible to see all the way 150km across the Irish Sea!",
+  },
+  {
+    name: "Ballinastoe Forest",
+    lat: "53.1026255627096",
+    long: "-6.254810200706456",
+    date: "26/08/2023",
+    time: "2pm",
+    km: 5,
+    duration: "1.5 hours",
+    intensity: "Easy",
+    description:
+      "Looking a bit like a scene from Lord of the Rings, the Ballinastoe Forest short trail offers a boardwalk and the view from the JB Malone Memorial.",
+  },
+];
+
 let hikeData;
 
 // trigger to populate modal information with current hike
@@ -9,46 +85,20 @@ $("#btn-show-modal").click(() => {
 function updateHikeInformation() {
   // clears old distance calculation
   $("#distance").text(``);
-  // load the information about hike into JS object
-  console.log("loading JSON ");
-  fetch("/data/hikes.json")
-    .then((response) => response.json())
-    .then((data) => {
-      // json loaded successfully. now populate the elements on the modal. find active card
-      // first find current Carousel index
-      let activeCard = document.querySelector("[data-active]");
-      let carouselIndex = $(activeCard).index();
 
-      // for now, description is being hard coded and not fetched from a backend server.
-      updateDescription( data, carouselIndex )
+  // json loaded successfully. now populate the elements on the modal. find active card
+  // first find current Carousel index
+  let activeCard = document.querySelector("[data-active]");
+  let carouselIndex = $(activeCard).index();
 
-      // update the heading and text
-      // This number is chosen depending on the Carousel card that is currently selected.
-      $("#hike-heading").text(data[carouselIndex].name);
-      $("#hike-description").text(data[carouselIndex].description);
-      // Save data of current slide in global variable
-      hikeData = data[carouselIndex];
-      // Run function to recalulate distance from hike location
-      handlePositionUpdate();
-    });
-}
-
-// updates the description of the hike based on the selected carousel index. 
-//note that this is hard coded so we can use github pages for deployment. 
-function updateDescription( data, carouselIndex) {
-
-  descriptions = 
-    {
-      0: "This is a description for Hike 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
-      1: "This is a description for Hike 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
-      2: "This is a description for Hike 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
-      3: "This is a description for Hike 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
-      4: "This is a description for Hike 5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
-      5: "This is a description for Hike 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem quae aliquid temporibus atque cupiditate nostrum, voluptates saepe voluptatem ipsa?",
-    }
-  
-    // update the object description 
-  data[carouselIndex].description = descriptions[carouselIndex]
+  // update the heading and text
+  // This number is chosen depending on the Carousel card that is currently selected.
+  $("#hike-heading").text(hikeJson[carouselIndex].name);
+  $("#hike-description").text(hikeJson[carouselIndex].description);
+  // Save data of current slide in global variable
+  hikeData = hikeJson[carouselIndex];
+  // Run function to recalulate distance from hike location
+  handlePositionUpdate();
 }
 
 function calculateDistance(latUser, lonUser, latDest, lonDest) {
