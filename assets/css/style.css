@@ -234,10 +234,6 @@ footer {
 }
 
 @media screen and (max-width: 572px) {
-    .carousel {
-        height: 400px;
-    }
-
     .carousel-button.previous {
         left: 0.7rem;
     }
@@ -267,10 +263,6 @@ footer {
 }
 
 @media screen and (max-width: 372px) {
-    .carousel {
-        height: 320px;
-    }
-
     .carousel-container {
         margin-bottom: 20px;
     }
