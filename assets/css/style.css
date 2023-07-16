@@ -1,3 +1,9 @@
+
+:root {
+    --primary-bg-color: rgba(159, 133, 37, 0.45);
+    --secondary-bg-color:  rgba(159, 133, 37, 0.45)
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -6,15 +12,17 @@ body {
 /* Hero Image on landing page */
 body.landing {
     margin: 0;
-    background: url("../images/Summer-Home-full.jpg") no-repeat center center
+    background: linear-gradient(to bottom, var(--primary-bg-color), var(--primary-bg-color)),
+     url("../images/Summer-Home-full.jpg")   no-repeat center center
         fixed;
     background-size: cover;
-}
+} 
 
 /* Hero Image on events page */
 body.events {
     margin: 0;
-    background: url("../images/pexels-ricardo-santanna-16980748.jpg") no-repeat center center
+    background: linear-gradient(to bottom,  var(--primary-bg-color), var(--secondary-bg-color)),
+    url("../images/Summer-Home-full.jpg")  no-repeat center center
         fixed;
     background-size: cover;
 }
@@ -22,7 +30,8 @@ body.events {
 /* Hero Image on Trails page */
 body.trails {
     margin: 0;
-    background: url("../images/vertical-shot-woman-walking-through-forest.jpg") no-repeat center center
+    background: linear-gradient(to bottom,  var(--primary-bg-color), var(--secondary-bg-color)),
+    url("../images/Summer-Home-full.jpg")   no-repeat center center
         fixed;
     background-size: cover;
 }
