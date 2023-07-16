@@ -73,26 +73,16 @@ const hikeJson = [
       "Looking a bit like a scene from Lord of the Rings, the Ballinastoe Forest short trail offers a boardwalk and the view from the JB Malone Memorial.",
   },
 ];
-
 let userPositionAvailable = false;
 let hikeData;
 let distances = [];
 // trigger to populate hike info information with current hike on load
-
-let hikeData;
-// trigger to populate modal information with current hike
-
 $(".carousel-button").click(() => {
   updateHikeInformation();
 });
 
 function updateHikeInformation() {
   // find the index of the carousel item that is active
-  // clears old distance calculation
-  $("#distance").text(``);
-
-  // json loaded successfully. now populate the elements on the modal. find active card
-  // first find current Carousel index
   let activeCard = document.querySelector("[data-active]");
   let carouselIndex = $(activeCard).index();
 
@@ -103,14 +93,10 @@ function updateHikeInformation() {
   $("#hike-description").text(hikeJson[carouselIndex].description);
 
   // On picture items
-  // This number is chosen depending on the Carousel card that is currently selected.
-  $("#hike-heading").text(hikeJson[carouselIndex].name);
-  $("#hike-description").text(hikeJson[carouselIndex].description);
   $("#hike-name").text(hikeJson[carouselIndex].name);
   $("#hike-date").text(hikeJson[carouselIndex].date);
   $("#hike-time").text(`Start: ${hikeJson[carouselIndex].time.toUpperCase()}`);
   $("#hike-intensity").text(`Intensity: ${hikeJson[carouselIndex].intensity}`);
-
   $("#hike-km").text(`Trail Length: ${hikeJson[carouselIndex].km} km `);
   $("#hike-duration").text(`Est Time: ${hikeJson[carouselIndex].duration}`);
 
@@ -121,18 +107,17 @@ function updateHikeInformation() {
     $("#hike-distance").text("Loading distance...");
   }
 
+  // add google maps link to modal, using long/lat of the current item
+  $("#google-maps").attr(
+    "href",
+    `https://www.google.com/maps/dir/?api=1&destination=${hikeJson[carouselIndex].lat},${hikeJson[carouselIndex].long}`
+  );
+
   // Save data of current slide in global variable, including index
   hikeData = {
     ...hikeJson[carouselIndex],
   };
   hikeData.index = carouselIndex;
-
-  $("#hike-km").text(`Distance: ${hikeJson[carouselIndex].km} km `);
-  $("#hike-duration").text(`Est Time: ${hikeJson[carouselIndex].duration}`);
-  // Save data of current slide in global variable
-  hikeData = hikeJson[carouselIndex];
-  // Run function to recalulate distance from hike location
-  handlePositionUpdate();
 }
 
 function calculateDistance(latUser, lonUser, latDest, lonDest) {
@@ -187,7 +172,6 @@ function handlePositionError(error) {
 }
 
 // tracking position start
-
 navigator.geolocation.watchPosition(
   calculateAllDistances,
   handlePositionError,
@@ -195,8 +179,3 @@ navigator.geolocation.watchPosition(
     enableHighAccuracy: true,
   }
 );
-
-updateHikeInformation();
-navigator.geolocation.watchPosition(handlePositionUpdate, handlePositionError, {
-  enableHighAccuracy: true,
-});
