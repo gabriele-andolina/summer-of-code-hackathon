@@ -173,6 +173,33 @@ footer {
     opacity: 1;
 }
 
+.carousel-information {
+    position: relative;
+    color: white;
+    background: none;
+    font-size: 32px;
+}
+
+.carousel-text {
+    position: absolute;
+    opacity: 0;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.carousel-text[data-active] {
+    opacity: 1;
+}
+
+.carousel-text p {
+    margin: 0;
+}
+
 @media screen and (max-width: 1200px) {
     .carousel-slide>img {
         border-radius: 0;
@@ -224,6 +251,10 @@ footer {
     .carousel-tab {
         width: 12px;
         height: 12px;
+    }
+
+    .carousel-text {
+        padding: 10px;
     }
 }
 
