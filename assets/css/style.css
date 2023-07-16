@@ -219,6 +219,10 @@ footer {
         margin: 15px 0;
     }
 
+    .carousel-information {
+        font-size: 24px;
+    }
+
     .carousel-button {
         font-size: 5rem;
     }
@@ -251,6 +255,10 @@ footer {
     .carousel-tab {
         width: 12px;
         height: 12px;
+    }
+
+    .carousel-information {
+        font-size: 16px;
     }
 
     .carousel-text {
