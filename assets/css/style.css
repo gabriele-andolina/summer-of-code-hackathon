@@ -61,6 +61,11 @@ body.landing {
     background-size: cover;
 }
 
+#events-button {
+    position: absolute;
+    top: 75vh;
+}
+
 /* Hero Image on events page */
 body.events {
     margin: 0;
