@@ -6,10 +6,10 @@
 
 Welcome to the Trail Pals website. Trail Pals organises hiking events based in Dublin.
 
-
-![Responsive-Home](README/images/Responsive-Home.png)
+![Responsive-Home](README/images/responsive-home.png)
 
 A live website can be found [here](https://gabriele-andolina.github.io/summer-of-code-hackathon/index.html).
+
 
 
 # Table of Contents
@@ -37,9 +37,7 @@ A live website can be found [here](https://gabriele-andolina.github.io/summer-of
 # 1. UX
 [Go to the top](#table-of-contents)
 
-
 The main focus for the Trail Pals website was to make it intuitive and easy to navigate. It is targeted at people in the vicinity of Dublin. Whether you are an experienced or novice hiker, Trail Pals has a trail for you.
-
 
 
 
@@ -49,7 +47,6 @@ The main focus for the Trail Pals website was to make it intuitive and easy to n
 
 ### Project Goals:
 -   Responsive design to make the website accessible on different screen sizes.
-
 -   The website design and colours are eye catching and appealing.
 -   The website is catering to accessiblity with it's font, color contrast and descriptions.
 ### User Goals:
@@ -57,10 +54,11 @@ The main focus for the Trail Pals website was to make it intuitive and easy to n
 -   As a coder in Dublin, I want to explore a map displaying all the trails available in the city, so I can easily find nearby routes and plan my walks conveniently.
 -   As a coder in Dublin, I want a user-friendly interface that allows me to filter and search for trails based on location, difficulty level, or specific features, so I can easily discover the perfect trail for my preferences.
 -   As a coder in Dublin, I want to access information about each trail, including distance, terrain and notable landmarks, so I can make informed decisions and choose the trails that align with my interests and fitness level.
-
 -   As a coder in Dublin, I want to see upcoming events an walk schedules on the page, so I can plan my time and participate in group meetups that suit my availability.
 
 ![Issues](README/images/Issues.png)
+
+
 
 ### User Expectations:
 -   The website should be easy to navigate.
@@ -92,14 +90,13 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 
 ### Wire-frames
 
-
 ![Wireframe-Ed](README/images/Wireframe-Ed.png)
-
 
 ![Wireframe-Gab](README/images/Wireframe-Gab.png)
 
-
 ![Wireframe-Joe](README/images/Wireframe-Joe.png)
+
+
 
 
 
@@ -108,14 +105,13 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 [Go to the top](#table-of-contents)
 
 ### Colours
-- [](https://mycolor.space/)
-
-- https://mycolor.space/
+The color palette was taken from Color Hunt:
+![Color palette](README/images/color-palette.png)
+We chose warm and earthly colours to encourage outdoors experiences and socialization.
 
 ### Typography
-
-- [](https://fonts.google.com/specimen/Oswald?query=oswald+)
-
+- Headings: Playfair 500/700 bold
+- Body & Text: OpenSans 300 light
 
 # 2. Features
 
@@ -123,33 +119,25 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 
 ### All Pages
 #### Navbar
-
 The navbar offers up three links to help the user navigate through the site.
 
 ![navbar-links](README/images/navbar-links.png)
-
-
 
 #### Footer
 The footer contains social media icons and credits the site owners.
 
 ![footer](README/images/footer.png)
-<!-- <img width="960" alt="footer" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/e8e46ad7-510a-4cd3-9d74-b796ce80cd96"> -->
-
 
 ### Home
 - Links.
 - Social media icons.
 
-
 ![Home-Mobile](README/images/Home-Mobile.png)
-
 
 
 ### Events
 #### Carousel
 - The carousel is a slideshow for cycling through a series of content, built with CSS and some JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
-
 
 ![Events-Mobile](README/images/Events-Mobile.png)
 
@@ -250,10 +238,8 @@ The footer contains social media icons and credits the site owners.
     </section>
 ``` 
 ### Trails
-
 - Google Maps
-![Trails-Mobile](README/images/Trails-Mobile)
-
+![Trails-Mobile](README/images/Trails-Mobile.png)
 
 
 
@@ -288,9 +274,7 @@ function initMap() {
 -   [Balsamiq](https://balsamiq.com/)
     -   Balsamiq was used to create the wireframes during the design process.
 -   [Google Fonts](https://fonts.google.com/)
-
     -   Google fonts were used to import the **"Oswald"** font into the style.css file which is used on all pages throughout the project.
-
 -   [GitHub](https://github.com/)
     -   GitHub was used to store the project's code after being pushed from Git.
 # 4. Testing
@@ -327,20 +311,16 @@ We have tested the site on different browsers and devices.
 5. Click on the dropdown menu select branch and select main.
 6. Click save.
 7. Once page has refreshed scroll down to get deployed link.
-
 8. Click on the link for validation.
 
 # 6. Social Media Page
 ![Facebook-1](README/images/Facebook-1.png)
 
 
-
 # 7. SEO
 To improve the search engine optimisation (SEO) of the website:
 
-
 - We added keywords in the meta tags of each html file. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
-
 
 - The list of keywords are as follows:
     - Dublin Coders.
@@ -352,23 +332,12 @@ To improve the search engine optimisation (SEO) of the website:
     - Dublin Trails.
     - Group Walks.
 
+# 8. Known Bugs
 
-# 8. End Product
-
-![Home-Mobile](README/images/Home-Mobile.png)
-
-![Events-Mobile](README/images/Events-Mobile.png)
-
-![Trails-Mobile](README/images/Trails-Mobile.png)
-
-
-# 9. Known Bugs
-
-# 10. Credits
+# 9. Credits
 [Go to the top](#table-of-contents)
 
 ### Code
-
 
 - [](https://learn.codeinstitute.net/)
 - [](https://www.youtube.com/)
@@ -377,7 +346,6 @@ To improve the search engine optimisation (SEO) of the website:
 
 - []https:(//mycolor.space/)
 - []https:(//fonts.google.com/)
-
 
 
 ### Project Acknowledgements
