@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap');
+
 /* --------------------------------------------------- General Styling */
 
 :root {
@@ -31,6 +33,7 @@
         --fs-button: var(--fs-300);
     }
 }
+
 
 body {
     margin: 0;
@@ -127,6 +130,10 @@ ul.navbar li a:hover {
     font-weight: var(--fw-medium);
     font-family: var(--primary-font-familiy);
     font-size: var(--fs-700)
+}
+
+#card-body {
+    color: white;
 }
 
 /* CSS for the footer */
@@ -371,6 +378,15 @@ footer {
 }
 
 /* Map - Trails Page */
+.card-title { 
+    font-family: oswald, sans-serif;
+    color: white;
+}
+
+.card-text {
+    font-family: oswald, sans-serif;
+    color: white;
+}
 
 #map {
     height: 80vh;
