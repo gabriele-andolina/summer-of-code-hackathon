@@ -7,10 +7,9 @@
 Welcome to the Trail Pals website. Trail Pals organises hiking events based in Dublin.
 
 
-<img width="956" alt="Responsive-Home (2)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/941b04c1-fb62-4fc9-8532-d2a7af09142d">
+![Responsive-Home](README/images/Responsive-Home.png)
 
 A live website can be found [here](https://gabriele-andolina.github.io/summer-of-code-hackathon/index.html).
-
 
 
 # Table of Contents
@@ -38,7 +37,9 @@ A live website can be found [here](https://gabriele-andolina.github.io/summer-of
 # 1. UX
 [Go to the top](#table-of-contents)
 
-The main focus for the Trail Pals website was to make it intuitive and easy to navigate. It is targeted at people in the Dublin vicinity. Whether you are an experienced or novice hiker, Trail Pals has a trail for you.
+
+The main focus for the Trail Pals website was to make it intuitive and easy to navigate. It is targeted at people in the vicinity of Dublin. Whether you are an experienced or novice hiker, Trail Pals has a trail for you.
+
 
 
 
@@ -48,15 +49,19 @@ The main focus for the Trail Pals website was to make it intuitive and easy to n
 
 ### Project Goals:
 -   Responsive design to make the website accessible on different screen sizes.
--   The website design and colours are easy on the eye.
+
+-   The website design and colours are eye catching and appealing.
 -   The website is catering to accessiblity with it's font, color contrast and descriptions.
 ### User Goals:
 -   As a coder in Dublin, I want to find group meetups to walk together with other coding enthusiasts, so I can promote my well-being and build connections within the community.
 -   As a coder in Dublin, I want to explore a map displaying all the trails available in the city, so I can easily find nearby routes and plan my walks conveniently.
 -   As a coder in Dublin, I want a user-friendly interface that allows me to filter and search for trails based on location, difficulty level, or specific features, so I can easily discover the perfect trail for my preferences.
 -   As a coder in Dublin, I want to access information about each trail, including distance, terrain and notable landmarks, so I can make informed decisions and choose the trails that align with my interests and fitness level.
--   As a coder in Dublin, I want to see upcoming events an walk schedules on the page, so I can plan my time and participate in group meetups that su
-<img width="960" alt="2023-07-16 (9)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/86e3ff14-3389-4160-8229-955978ed279a">
+
+-   As a coder in Dublin, I want to see upcoming events an walk schedules on the page, so I can plan my time and participate in group meetups that suit my availability.
+
+![Issues](README/images/Issues.png)
+
 ### User Expectations:
 -   The website should be easy to navigate.
 -   The menu is clear.
@@ -68,7 +73,8 @@ The main focus for the Trail Pals website was to make it intuitive and easy to n
 
 We used the GitHub projects board to manage our project. This ensured that we were on track as we moved issues from to do, to in progress and finally to done.
 
-<img width="956" alt="Kanban" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/21f4b0b9-30aa-4048-8717-c0d07ac0cdf9">
+![Kanban](README/images/Kanban.png)
+
 
 
 ## 1.2. Structure
@@ -86,13 +92,14 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 
 ### Wire-frames
 
-<img width="960" alt="1st-Wireframe(Ed)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/5d3cc318-6103-48fa-8b59-873a8a6b81f0">
 
-<img width="956" alt="2nd-Wireframe(Gab)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/6b4e4747-5448-4332-924c-5329dc874a8a">
-
-<img width="956" alt="3rd-Wireframe(Joe)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/270932c6-ebc3-4610-9968-a8c975badd7b">
+![Wireframe-Ed](README/images/Wireframe-Ed.png)
 
 
+![Wireframe-Gab](README/images/Wireframe-Gab.png)
+
+
+![Wireframe-Joe](README/images/Wireframe-Joe.png)
 
 
 
@@ -101,11 +108,14 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 [Go to the top](#table-of-contents)
 
 ### Colours
+- [](https://mycolor.space/)
 
 - https://mycolor.space/
 
 ### Typography
-- https://fonts.google.com/specimen/Oswald?query=oswald+
+
+- [](https://fonts.google.com/specimen/Oswald?query=oswald+)
+
 
 # 2. Features
 
@@ -116,24 +126,32 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 
 The navbar offers up three links to help the user navigate through the site.
 
-<img width="960" alt="navbar links (2)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/1083106e-5b23-4d99-b733-79838f7da1f2">
+![navbar-links](README/images/navbar-links.png)
+
+
 
 #### Footer
 The footer contains social media icons and credits the site owners.
 
-<img width="960" alt="footer" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/e8e46ad7-510a-4cd3-9d74-b796ce80cd96">
+![footer](README/images/footer.png)
+<!-- <img width="960" alt="footer" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/e8e46ad7-510a-4cd3-9d74-b796ce80cd96"> -->
+
 
 ### Home
 - Links.
 - Social media icons.
-<img width="220" alt="Home-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/0be461f1-d8c5-46f5-a2c8-c94735504461">
+
+
+![Home-Mobile](README/images/Home-Mobile.png)
+
 
 
 ### Events
 #### Carousel
 - The carousel is a slideshow for cycling through a series of content, built with CSS and some JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
 
-<img width="222" alt="Events-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/ca101715-0e38-4d8c-983c-98c8e65252d5">
+
+![Events-Mobile](README/images/Events-Mobile.png)
 
 
 
@@ -234,8 +252,8 @@ The footer contains social media icons and credits the site owners.
 ### Trails
 
 - Google Maps
+![Trails-Mobile](README/images/Trails-Mobile)
 
-<img width="222" alt="Trails-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/2c4ecf46-29d8-470c-a3f8-b5c53c311e06">
 
 
 
@@ -309,15 +327,20 @@ We have tested the site on different browsers and devices.
 5. Click on the dropdown menu select branch and select main.
 6. Click save.
 7. Once page has refreshed scroll down to get deployed link.
-8. Can click on the link to see for validation.
+
+8. Click on the link for validation.
 
 # 6. Social Media Page
-<img width="960" alt="2023-07-16 (6)" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/294f9c7c-fe37-43c6-aa13-14dd4c2726fa">
+![Facebook-1](README/images/Facebook-1.png)
+
+
 
 # 7. SEO
 To improve the search engine optimisation (SEO) of the website:
 
-- We added keywords in a meta tags to each html file. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
+
+- We added keywords in the meta tags of each html file. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
+
 
 - The list of keywords are as follows:
     - Dublin Coders.
@@ -332,7 +355,11 @@ To improve the search engine optimisation (SEO) of the website:
 
 # 8. End Product
 
-<img width="220" alt="Home-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/0be461f1-d8c5-46f5-a2c8-c94735504461">   <img width="222" alt="Events-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/ca101715-0e38-4d8c-983c-98c8e65252d5">   <img width="222" alt="Trails-Mobile" src="https://github.com/EdHarty/summer-of-code-hackathon/assets/88341568/2c4ecf46-29d8-470c-a3f8-b5c53c311e06">
+![Home-Mobile](README/images/Home-Mobile.png)
+
+![Events-Mobile](README/images/Events-Mobile.png)
+
+![Trails-Mobile](README/images/Trails-Mobile.png)
 
 
 # 9. Known Bugs
@@ -342,13 +369,14 @@ To improve the search engine optimisation (SEO) of the website:
 
 ### Code
 
-- https://learn.codeinstitute.net/
-- https://www.youtube.com/
+
+- [](https://learn.codeinstitute.net/)
+- [](https://www.youtube.com/)
 
 ### Content
 
-- https://mycolor.space/
-- https://fonts.google.com/
+- []https:(//mycolor.space/)
+- []https:(//fonts.google.com/)
 
 
 
