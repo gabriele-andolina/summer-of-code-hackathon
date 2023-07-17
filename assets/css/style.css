@@ -1,10 +1,10 @@
 /* --------------------------------------------------- General Styling */
 
 :root {
-    --primary-bg-color: rgba(159, 133, 37, 0.45);
-    --secondary-bg-color: rgba(159, 133, 37, 0.45);
+    --primary-bg-color: rgba(245, 240, 187, 0.5);
+    --secondary-bg-color: rgba(245, 240, 187, 0.5);
 
-    --clr-light: #e5e5e5;
+    --clr-light: #3a3a3a;
 
     --primary-font-familiy: 'Playfair', serif;
     --secondary-font-familiy: 'Open Sans', sans-serif;
@@ -61,6 +61,11 @@ body.landing {
     background-size: cover;
 }
 
+#events-button {
+    position: absolute;
+    top: 75vh;
+}
+
 /* Hero Image on events page */
 body.events {
     margin: 0;
@@ -104,7 +109,10 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-    background-color: #a09e9e;
+    text-decoration: underline #3a3a3a;
+}
+.active {
+    text-decoration: underline #3a3a3a;
 }
 
 /* css for navbar events page */
@@ -124,39 +132,29 @@ ul.navbar li a:hover {
 /* CSS for the footer */
 footer {
     text-align: left;
-    padding-left: 10px;
-    position: fixed;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
-    width: 100%;
-    font-weight: bold;
-    color: white;
-    background-color: #a09e9e;
+    min-width: 100%;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-300);
+    color: rgba(228, 227, 227, 1);
+}
+
+/* to make footer elements be placed on bottom of screen instead of using fixed positioning */
+.module-inside {
+    min-height: 90vh;
 }
 
 /* Carousel - Events Page */
-
 
 .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 40px;
     box-sizing: border-box;
-    padding-bottom: 60px;
-}
-
-.block__header {
-    margin: 20px 0;
-    text-align: center;
-    color: var(--clr-light)
-}
-
-#hike-info {
-    position: absolute;
-    color: #fff;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px 0px 5px 0px;
 }
 
 .carousel {
@@ -164,7 +162,7 @@ footer {
     border-radius: 20px;
     box-shadow: 0 0 10px black;
     position: relative;
-    height: 600px;
+    height: 70vh;
 }
 
 .carousel ul {
@@ -244,6 +242,38 @@ footer {
     opacity: 1;
 }
 
+.carousel-information {
+    position: relative;
+    color: white;
+    background: none;
+    font-size: 32px;
+}
+
+.carousel-text {
+    position: absolute;
+    opacity: 0;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.carousel-text[data-active] {
+    opacity: 1;
+}
+
+.carousel-text p {
+    margin: 0;
+}
+
+.carousel-title {
+    font-weight: bold;
+    font-size: 110%;
+}
+
 @media screen and (max-width: 1200px) {
     .carousel-slide>img {
         border-radius: 0;
@@ -252,24 +282,15 @@ footer {
     .carousel-slide>img {
         border-radius: 0;
     }
-
-    #hike-info {
-        border-radius: 0px 0px 5px 0px;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
-    .carousel {
-        height: 500px;
-    }
-
     .carousel-container {
         margin-bottom: 30px;
     }
 
-    .block__header {
-        margin: 15px 0;
+    .carousel-information {
+        font-size: 24px;
     }
 
     .carousel-button {
@@ -283,10 +304,6 @@ footer {
 }
 
 @media screen and (max-width: 572px) {
-    .carousel {
-        height: 400px;
-    }
-
     .carousel-button.previous {
         left: 0.7rem;
     }
@@ -305,13 +322,13 @@ footer {
         width: 12px;
         height: 12px;
     }
+
+    .carousel-text {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 372px) {
-    .carousel {
-        height: 320px;
-    }
-
     .carousel-container {
         margin-bottom: 20px;
     }
@@ -329,13 +346,17 @@ footer {
     }
 }
 
+.btn {
+    margin-bottom: 2em;
+}
+
 /* Trails page */
 .trailsintro {
     font-family: var(--secondary-font-familiy);
     font-size: var(--fs-300);
     font-weight: var(--fw-medium);
     line-height: 1.5;
-    color: var(--clr-light)
+    color: #3a3a3a
 }
 
 .trailsintro p {
@@ -352,8 +373,9 @@ footer {
 /* Map - Trails Page */
 
 #map {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 .marker {
@@ -397,24 +419,27 @@ footer {
 .footer-icons {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
     gap: 10px;
-    align-items: flex-start;
     /* Adjust alignment */
     margin-bottom: 20px;
     /* Adjust margin bottom */
+}
+
+.fa {
+    color: var(--clr-light);
 }
 
 .footer-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
 }
 
-.footer-icons a svg {
-    width: 100%;
-    height: 100%;
+.footer-icons img {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 footer {

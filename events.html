@@ -39,158 +39,97 @@
   <body class="events">
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
-      <li><a href="events.html">Events</a></li>
+      <li class="active"><a href="events.html">Events</a></li>
       <li><a href="trails.html">Trails</a></li>
     </ul>
     <h1 class="header">Events</h1>
-    <!-- Button trigger modal -->
+
+    <!-- Carousel starts here -->
     <section aria-label="Hike Trails">
       <div class="carousel-container">
-        <header class="block__header">
-          <h2>Hiking Meet Ups</h2>
-        </header>
-        <div class="carousel" data-carousel>
-          <!-- Carousel pictures -->
-          <ul class="carousel-images" data-slides>
-            <li class="carousel-slide" data-active>
-              <img
-                src="assets/images/trail1.jpg"
-                class="carousel-image"
-                alt="A lake by the mountains"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail2.jpg"
-                class="carousel-image"
-                alt="A hike trail leading through mountainous grassland"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail3.jpg"
-                class="carousel-image"
-                alt="A forest densely populated with tall trees"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail4.jpg"
-                class="carousel-image"
-                alt="A hike trail through a meadow"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail5.jpg"
-                class="carousel-image"
-                alt="A hike trail up a mountain"
-              />
-            </li>
-            <li class="carousel-slide">
-              <img
-                src="assets/images/trail6.jpg"
-                class="carousel-image"
-                alt="A hilly forest hike trail"
-              />
-            </li>
-          </ul>
-          <!-- Carousel tabs -->
-          <ul class="carousel-tabs" data-tabs>
-            <li
-              class="carousel-tab"
-              data-carousel-tab
-              data-index="0"
-              data-active
-            ></li>
-            <li class="carousel-tab" data-carousel-tab data-index="1"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="2"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="3"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="4"></li>
-            <li class="carousel-tab" data-carousel-tab data-index="5"></li>
-          </ul>
-          <!-- Carousel controls -->
-          <button
-            class="carousel-button previous"
-            data-carousel-button="previous"
-            aria-label="Previous carousel"
-          >
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button
-            class="carousel-button next"
-            data-carousel-button="next"
-            aria-label="Next carousel"
-          >
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-
-
-          <div id="hike-info" class="p-2">
-            <h5 id="hike-name" class="p-0 m-0">Hikeypikey</h5>
-            <div>
-              <span id="hike-date">34 Kep</span>
-            </div>
-            <div><span id="hike-time">Start: 13PM</span></div>
-            <div>
-              <span id="hike-km">Trail Length: -3km</span>
-            </div>
-            <div><span id="hike-duration">Est Time: 15yrs</span></div>
-            <div>
-              <span id="hike-intensity">Intensity: Breeze</span>
-            </div>
-            <div>
-              <span id="hike-distance">Finding your location... </span>
-            </div>
+          <div class="carousel" data-carousel>
+              <!-- Carousel pictures -->
+              <ul class="carousel-images" data-slides>
+                  <li class="carousel-slide" data-active>
+                      <img src="assets/images/trail1.webp" srcset="" class="carousel-image" alt="A lake by the mountains">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail2.webp" class="carousel-image" alt="A hike trail leading through mountainous grassland">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail3.webp" class="carousel-image" alt="A forest densely populated with tall trees">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail4.webp" class="carousel-image" alt="A hike trail through a meadow">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail5.webp" class="carousel-image" alt="A hike trail up a mountain">
+                  </li>
+                  <li class="carousel-slide">
+                      <img src="assets/images/trail6.webp" class="carousel-image" alt="A hilly forest hike trail">
+                  </li>
+              </ul>
+              <!-- Carousel tabs -->
+              <ul class="carousel-tabs" data-tabs>
+                  <li class="carousel-tab" data-carousel-tab data-index="0" data-active></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="1"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="2"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="3"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="4"></li>
+                  <li class="carousel-tab" data-carousel-tab data-index="5"></li>
+              </ul>
+              <!-- Carousel controls -->
+              <button class="carousel-button previous" data-carousel-button="previous" aria-label="Previous carousel">
+                  <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel-button next" data-carousel-button="next" aria-label="Next carousel">
+                  <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <!-- Carousel text -->
+              <div class="carousel-information" data-information>
+                  <div class="carousel-text" data-carousel-text data-active>
+                      <p class="carousel-title" id="hike-name">Ticknock</p>
+                      <p id="hike-date">Date</p>
+                      <p id="hike-time">Time</p>
+                      <p id="hike-km">Trail length</p>
+                      <p id="hike-duration">Duration</p>
+                      <p id="hike-intensity"> Intensity </p>
+                      <p id="hike-distance"> Dist away </p>
+                  </div>
+                </div>
           </div>
-
-      <div class="text-center">
-        <button
-          type="button"
-          class="btn btn-info"
-          data-toggle="modal"
-          data-target="#exampleModal"
-          id="btn-show-modal"
-        >
-          View More
-        </button>
+          <div class="text-center d-flex flex-column flex-sm-row d-md-block">
+            <button
+              type="button"
+              class="btn btn-info my-1 my-sm-3 mx-1 btn-lg flex-fill"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              id="btn-show-modal"
+            >
+              Description
+            </button>
+            <a target=”_blank” class="btn btn-primary my-1 my-sm-3 mx-1 btn-lg flex-fill" id="google-maps"><i class="fa-solid fa-location-arrow"></i> Navigate</a>
+          </div>
       </div>
-    </section>
 
-        </div>
-      </div>
+  </section>
+
     <!-- Button trigger modal -->
-
-      <div class="text-center">
-        <button
-          type="button"
-          class="btn btn-info"
-          data-toggle="modal"
-          data-target="#exampleModal"
-          id="btn-show-modal"
-        >
-          View More
-        </button>
-      </div>
-    </section>
-
-        </div>
-      </div>
-    </section>
+     
 
     <footer>
-      <p>Site created by The Coders Cobana</p>
       <div class="footer-icons">
         <a href="#"
-          ><img src="assets/images/facebook (1).svg" alt="Facebook"
+          ><img src="assets/images/facebook-light.svg" alt="Facebook"
         /></a>
         <a href="#"
-          ><img src="assets/images/square-twitter.svg" alt="Twitter"
+          ><img src="assets/images/twitter-light.svg" alt="Twitter"
         /></a>
         <a href="#"
-          ><img src="assets/images/instagram (1).svg" alt="Instagram"
+          ><img src="assets/images/instagram-light.svg" alt="Instagram"
         /></a>
       </div>
+      <p>&copy; The Coders Cabana, 2023</p>
     </footer>
 
     <!-- Modal -->
@@ -237,7 +176,7 @@
                 data-target="#exampleModal"
                 id="btn-show-modal"
               >Close</button>
-                <a target=”_blank” class="btn btn-secondary m-1" id="google-maps">Open With Google Maps</a>
+                
               </div>
             </div>
           </div>
