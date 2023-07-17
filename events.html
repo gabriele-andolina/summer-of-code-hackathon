@@ -86,71 +86,36 @@
                   <i class="fa-solid fa-chevron-right"></i>
               </button>
               <!-- Carousel text -->
-              <ul class="carousel-information" data-information>
-                  <li class="carousel-text" data-carousel-text data-index="0" data-active>
-                      <p class="carousel-title">Ticknock</p>
-                      <p>10km</p>
-                      <p>Difficulty: Moderate</p>
-                      <p>Date: 22/07/23</p>
-                      <p>Time: 2pm</p>
-                  </li>
-                  <li class="carousel-text" data-carousel-text data-index="1">
-                      <p class="carousel-title">Tibradden</p>
-                      <p>2.5km</p>
-                      <p>Difficulty: Easy</p>
-                      <p>Date: 29/07/23</p>
-                      <p>Time: 2pm</p>
-                  </li>
-                  <li class="carousel-text" data-carousel-text data-index="2">
-                      <p class="carousel-title">Howth Cliff</p>
-                      <p>12km</p>
-                      <p>Difficulty: Moderate</p>
-                      <p>Date: 05/08/23</p>
-                      <p>Time: 2pm</p>
-                  </li>
-                  <li class="carousel-text" data-carousel-text data-index="3">
-                      <p class="carousel-title">Djouce</p>
-                      <p>8km</p>
-                      <p>Difficulty: Easy</p>
-                      <p>Date: 12/08/23</p>
-                      <p>Time: 2pm</p>
-                  </li>
-                  <li class="carousel-text" data-carousel-text data-index="4">
-                      <p class="carousel-title">Sugarloaf</p>
-                      <p>10km</p>
-                      <p>Difficulty: Moderate</p>
-                      <p>Date: 22/08/23</p>
-                      <p>Time: 2pm</p>
-                  </li>
-                  <li class="carousel-text" data-carousel-text data-index="5">
-                      <p class="carousel-title">Ballinastoe forest</p>
-                      <p>5km</p>
-                      <p>Difficulty: Easy</p>
-                      <p>Date: 22/08/23</p>
-                      <p>Time: 2pm</p>
-                  </li>
-              </ul>
+              <div class="carousel-information" data-information>
+                  <div class="carousel-text" data-carousel-text data-active>
+                      <p class="carousel-title" id="hike-name">Ticknock</p>
+                      <p id="hike-date">Date</p>
+                      <p id="hike-time">Time</p>
+                      <p id="hike-km">Trail length</p>
+                      <p id="hike-duration">Duration</p>
+                      <p id="hike-intensity"> Intensity </p>
+                      <p id="hike-distance"> Dist away </p>
+                  </div>
+                </div>
+          </div>
+          <div class="text-center d-flex flex-column flex-sm-row d-md-block">
+            <button
+              type="button"
+              class="btn btn-info my-1 my-sm-3 mx-1 btn-lg flex-fill"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              id="btn-show-modal"
+            >
+              Description
+            </button>
+            <a target=”_blank” class="btn btn-primary my-1 my-sm-3 mx-1 btn-lg flex-fill" id="google-maps"><i class="fa-solid fa-location-arrow"></i> Navigate</a>
           </div>
       </div>
+
   </section>
 
     <!-- Button trigger modal -->
-      <div class="text-center">
-        <button
-          type="button"
-          class="btn btn-info"
-          data-toggle="modal"
-          data-target="#exampleModal"
-          id="btn-show-modal"
-        >
-          View More
-        </button>
-      </div>
-    </section>
-
-        </div>
-      </div>
-    </section>
+     
 
     <footer>
       <div class="footer-icons">
@@ -211,7 +176,7 @@
                 data-target="#exampleModal"
                 id="btn-show-modal"
               >Close</button>
-                <a target=”_blank” class="btn btn-secondary m-1" id="google-maps">Open With Google Maps</a>
+                
               </div>
             </div>
           </div>

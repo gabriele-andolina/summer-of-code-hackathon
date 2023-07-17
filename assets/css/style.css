@@ -61,6 +61,11 @@ body.landing {
     background-size: cover;
 }
 
+#events-button {
+    position: absolute;
+    top: 75vh;
+}
+
 /* Hero Image on events page */
 body.events {
     margin: 0;
@@ -150,7 +155,6 @@ footer {
     margin: 0 auto;
     margin-bottom: 40px;
     box-sizing: border-box;
-    padding-bottom: 60px;
 }
 
 .carousel {
@@ -253,8 +257,8 @@ footer {
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.2);
     padding: 20px;
-    border-bottom-right-radius: 20px ;
-    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .carousel-text[data-active] {
@@ -264,6 +268,7 @@ footer {
 .carousel-text p {
     margin: 0;
 }
+
 .carousel-title {
     font-weight: bold;
     font-size: 110%;
@@ -316,10 +321,6 @@ footer {
     .carousel-tab {
         width: 12px;
         height: 12px;
-    }
-
-    .carousel-information {
-        font-size: 16px;
     }
 
     .carousel-text {
@@ -426,9 +427,9 @@ footer {
     /* Adjust margin bottom */
 }
 
-.fa  {
+.fa {
     color: var(--clr-light);
-  }
+}
 
 .footer-icons a {
     display: flex;
