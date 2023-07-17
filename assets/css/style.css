@@ -1,10 +1,10 @@
 /* --------------------------------------------------- General Styling */
 
 :root {
-    --primary-bg-color: rgba(159, 133, 37, 0.45);
-    --secondary-bg-color: rgba(159, 133, 37, 0.45);
+    --primary-bg-color: rgba(245, 240, 187, 0.5);
+    --secondary-bg-color: rgba(245, 240, 187, 0.5);
 
-    --clr-light: #e5e5e5;
+    --clr-light: #3a3a3a;
 
     --primary-font-familiy: 'Playfair', serif;
     --secondary-font-familiy: 'Open Sans', sans-serif;
@@ -104,7 +104,10 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-    background-color: #a09e9e;
+    text-decoration: underline #3a3a3a;
+}
+.active {
+    text-decoration: underline #3a3a3a;
 }
 
 /* css for navbar events page */
@@ -124,15 +127,15 @@ ul.navbar li a:hover {
 /* CSS for the footer */
 footer {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 0px;
     padding-bottom: 10px;
     /* position: fixed; */
     left: 0;
     bottom: 0;
-    width: 100%;
+    min-width: 100%;
     font-weight: var(--fw-medium);
     font-size: var(--fs-300);
-    color: rgba(228, 227, 227, 0.8);
+    color: rgba(228, 227, 227, 1);
 }
 
 /* to make footer elements be placed on bottom of screen instead of using fixed positioning */
@@ -342,13 +345,17 @@ footer {
     }
 }
 
+.btn {
+    margin-bottom: 2em;
+}
+
 /* Trails page */
 .trailsintro {
     font-family: var(--secondary-font-familiy);
     font-size: var(--fs-300);
     font-weight: var(--fw-medium);
     line-height: 1.5;
-    color: var(--clr-light)
+    color: #3a3a3a
 }
 
 .trailsintro p {

@@ -91,8 +91,10 @@ The website has a responsive design to ensure a pleasant user experience whilst 
 [Go to the top](#table-of-contents)
 
 ### Colours
+We got the inspiration for our colour palatte from [ColorHunt](https://colorhunt.co/).
 
 ### Typography
+We sourced the font for the website from [Google Fonts](https://fonts.google.com/).
 
 # 2. Features
 
