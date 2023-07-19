@@ -150,6 +150,19 @@ footer {
     color: rgba(228, 227, 227, 1);
 }
 
+.social-media-icon {
+    font-size: 4rem;
+    color: #fff;
+    transition: 0.3s color;
+    text-decoration: none;
+}
+
+.social-media-icon:hover {
+    text-decoration: none;
+    color: #ffd8d8;
+}
+
+
 /* to make footer elements be placed on bottom of screen instead of using fixed positioning */
 .module-inside {
     min-height: 90vh;
